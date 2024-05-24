@@ -2,6 +2,11 @@
 
 /*모바일 시작*/
 
+.wrap-bg{width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;}
+.wrap-bg .horaizontal-line{width: 100%; height: 2px; background-color: #fff; position: absolute; top: 20px; left: 0;}
+.wrap-bg .vertical-line{width: 2px; height: 100%; background-color: #fff; position: absolute; top: 0; right: 20px;}
+.wrap-bg h1{font-size: 20px; font-family: 'OKGUNG'; position: absolute; top: 20px; right: 40px; transform: translateY(-50%); background-color: #000; padding: 0 20px;}
+
 /*#visual 시작*/
 #visual{display: block;  height: 200vh;}
 #visual > div{width: 100%; height: 100vh;}
@@ -19,12 +24,56 @@
 #visual .right .txt-box p{font-size: 40px; font-family: 'RixInooAriDuriR'; display: flex; justify-content: space-between; margin-bottom: 30px; letter-spacing: 2px;}
 #visual .right .txt-box p span.reverse{color: #fff; position: relative;}
 #visual .right .txt-box p span.reverse::after{content: ""; display: block; width: 110%; height: 120%; background-color: #000; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
-#visual .right .txt-box p span strong.point_Color_01{color: #fe6c00;}
-#visual .right .txt-box p span strong.point_Color_02{color: #2f44df;}
+.point_Color_01{color: #fe6c00;}
+.point_Color_02{color: #2f44df;}
 #visual .right .txt-box p .turn{animation: turn 3s infinite linear;}
 #visual .right .name{border-top: 2px solid #000; padding-top: 10px;}
 #visual .right .name h1{text-align: right; font-family: 'RixInooAriDuriR'; font-size: 16px; font-weight: 400; letter-spacing: 1px;}
 /*#visual 끝*/
+
+
+
+
+
+/*profile 시작*/
+#profile.parallax__item {height: auto; padding: 80px 40px 40px 20px; justify-content: space-between; display: block;}
+
+
+
+
+#profile .left .img-box{width: calc(100% - 60px); height: auto; border-radius: 85px 85px 0 0; overflow: hidden; margin: 0 auto 20px;}
+#profile .left .img-box img{width: 100%; height: 100%; object-fit: cover;}
+
+#profile .left .txt-box{width: calc(100% - 60px); font-family: 'NanumSquare'; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between;}
+#profile .left .txt-box .name{margin-bottom: 20px; width: 233px;}
+#profile .left .txt-box .name h2{font-size: 33px; font-family: 'OKGUNG'; letter-spacing: 2px;}
+#profile .left .txt-box .name h2 div:first-child{display: flex; justify-content: space-between;}
+#profile .left .txt-box .name h2 .korean{font-size: 20px; font-weight: 400; transform: translate(-10px, 18px); font-family: 'NanumSquare';}
+#profile .left .txt-box .birthday{font-size: 22px; margin-bottom: 5px;}
+#profile .left .txt-box .e-mail{font-size: 22px; margin-bottom: 5px;}
+#profile .left .txt-box .phone{font-size: 22px; margin-bottom: 20px;}
+
+#profile .left .key-box{width: 200px ;height: 260px; border: 2px solid #fff; border-radius: 25px; padding: 10px 0; margin: 0 auto;}/*여기서부터*/
+#profile .left .key-box h3{font-size: 17px; text-align: center; font-weight: normal;}
+#profile .left .key-box ul{position: relative; width: 100%;}
+#profile .left .key-box ul li{font-size: 14px; position: absolute;}
+#profile .left .key-box ul li:nth-child(1){top: 15px; left: 30%;}
+#profile .left .key-box ul li:nth-child(2){top: 35px; left: 50%;}
+#profile .left .key-box ul li:nth-child(3){top: 55px; left: 10%;}
+#profile .left .key-box ul li:nth-child(4){top: 65px; left: 40%;}
+#profile .left .key-box ul li:nth-child(5){top: 90px; left: 20%;}
+#profile .left .key-box ul li:nth-child(6){top: 100px; left: 60%;}
+
+#profile .right > ul > li{border-left: 2px solid #fff; margin-bottom: 50px; padding-left: 5px;}
+#profile .right > ul > li h3{font-size: 25px; margin-bottom: 5px;}
+#profile .right > ul > li ul{padding-left: 20px;}
+#profile .right > ul > li ul li{margin-bottom: 10px;}
+#profile .right .year{font-size: 20px; margin-bottom: 2px;}
+#profile .right .year .until{display: block; padding-left: 14px;}
+#profile .right .cont{font-size: 15px;}
+
+
+/*profile 끝*/
 
 /*모바일 끝*/
 
@@ -38,7 +87,7 @@
 
 
 /*태블릿 시작*/
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 768px) {
 
   /*#visual 시작*/
   #visual .left .soup-title,
@@ -52,6 +101,13 @@
   #visual .right .name{border-top: 2px solid #000; padding-top: 15px;}
   #visual .right .name h1{font-size: 24px;}
   /*#visual 끝*/
+
+
+
+
+
+  /*profile 시작*/
+  /*profile 끝*/
 }/*태블릿 끝*/
 
 
@@ -63,17 +119,24 @@
 
 
 /*PC 시작*/
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
   /*#visual 시작*/
   #visual{display: flex;  height: 100vh;}
   #visual{display: flex; justify-content: space-between;}
+  #visual > div{width: 50vw; height: 100vh;}
   #visual .left .soup-title,
   #visual .left .soup-desc {font-size: 60px;}
   #visual .left #soup-nav #soup-prev,
   #visual .left #soup-nav #soup-next{width: 55px; height: 55px;}
 
-  #visual .right .txt-box p{font-size: 80px;}
+  #visual .right .txt-box p{font-size: 60px;}
   /*#visual 끝*/
-  
+
+
+
+
+
+  /*profile 시작*/
+  /*profile 끝*/
 }/*PC 끝*/

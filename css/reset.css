@@ -13,10 +13,14 @@
 }
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
-body{font-size: 25px; font-family: 'NanumSquare', sans-serif; background-color: #000; color: #fff; min-width: 340px;}
+body{font-size: 25px; font-family: 'NanumSquare', sans-serif; background-color: #000; color: #fff; min-width: 340px; font-weight: no;}
 a{text-decoration: none; color: #fff;}
 ul, ol{list-style: none;}
 img{vertical-align: top; border: 0;}
+.point_Color_shadow_01{color: #fe6c00; text-shadow: 1px 1px 1px #fff;}
+.point_Color_shadow_02{color: #2f44df; text-shadow: 1px 1px 1px #fff;}
+.point_Color_01{color: #fe6c00;}
+.point_Color_02{color: #2f44df;}
 
 /*GASP 시작*/
 .parallax__item {
@@ -28,11 +32,6 @@ img{vertical-align: top; border: 0;}
   justify-content: center;
 }
 
-#section3, #section5, #section7, #section9 {/*마지막에 지울 예정*/
-  background-color: #222;
-}
-
-/* GASP 시작 */
 #parallax__cont {
   overflow: hidden;
 }
@@ -56,10 +55,6 @@ img{vertical-align: top; border: 0;}
   z-index: 9002;
   font-size: 64px;
 }
-
-
-
-
 
 #soup-container {
   width: 100%;
