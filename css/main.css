@@ -1,13 +1,50 @@
 @charset "utf-8";
 
+/*모바일 시작*/
+
 /*#visual 시작*/
-#visual{display: flex; justify-content: space-between;}
-#visual > div{width: 50%; height: 100%;}
-#visual .left #soup-nav{display: flex; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); justify-content: center;}
+
+#visual{display: block;  height: 200vh;}
+#visual > div{width: 100%; height: 100vh;}
+#visual .soup-title,
+#visual .soup-desc {font-size: 30px;}
+#visual .left #soup-nav{display: flex; position: absolute; bottom: 3%; left: 50%; transform: translateX(-50%); justify-content: center;}
 #visual .left #soup-nav #soup-prev{display: block; width: 66px; height: 66px; background: url(../img/soup-prev.png) no-repeat center; color: transparent; font-size: 0; transition: all 0.5s; cursor: pointer; border-radius: 50%;}
 #visual .left #soup-nav #soup-prev:hover{transform: scale(1.2);}
 #visual .left #soup-nav #soup-next{display: block; width: 66px; height: 66px; background: url(../img/soup-next.png) no-repeat center; color: transparent; font-size: 0; transition: all 0.5s; cursor: pointer; border-radius: 50%;}
 #visual .left #soup-nav #soup-next:hover{transform: scale(1.2);}
 
-#visual .right{background-color: #fff;}
+#visual .right{background-color: #fff; color: #000;}
 /*#visual 끝*/
+
+/*모바일 끝*/
+
+
+
+
+
+
+
+
+
+
+/*태블릿 시작*/
+@media screen and (min-width: 1024px) {
+  #visual{display: flex;  height: 100vh;}
+  #visual{display: flex; justify-content: space-between;}
+  #visual .soup-title,
+#visual .soup-desc {font-size: 60px;}
+}/*태블릿 끝*/
+
+
+
+
+
+
+
+
+
+/*PC 시작*/
+@media screen and (min-width: 1920px) {
+  
+}/*PC 끝*/
