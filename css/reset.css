@@ -1,0 +1,127 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'RixInooAriDuriR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OKGUNG';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKGUNG.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{font-size: 25px; font-family: 'NanumSquare', sans-serif; background-color: #000; color: #fff;}
+a{text-decoration: none; color: #fff;}
+ul, ol{list-style: none;}
+img{vertical-align: top; border: 0;}
+
+/*GASP 시작*/
+.parallax__item {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section3, #section5, #section7, #section9 {/*마지막에 지울 예정*/
+  background-color: #222;
+}
+
+/* GASP 시작 */
+#parallax__cont {
+  overflow: hidden;
+}
+#horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 300%;/*100% x 가로화면수*/
+}
+#horizontal > section {
+  width: 100%;
+}
+/*GASP 끝*/
+
+
+/*visual 동작 시작*/
+#soup-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  z-index: 9002;
+  font-size: 64px;
+}
+
+.soup-title {
+  font-size: 60px;
+}
+
+.soup-desc {
+  font-size: 60px;
+}
+
+
+
+
+#soup-container {
+  width: 100%;
+  height: 100%;
+/*   min-width: 320px;
+  min-height: 480px; */
+  position: relative;
+
+  color: #111;
+  text-align: center;
+  font-family: 'OKGUNG';
+}
+
+.letters-wrap {
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+}
+.letters-wrap.mutable {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.letters-wrap.mutable .letter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: left 2s, top 2s, color 2s;
+  color: "#AAA";
+}
+.letters-wrap.mutable .letter.active {
+  color: "#111";
+  z-index: 9001;
+}
+.letters-wrap.position-data {
+  top: 50%;
+  left: 50%;
+  /*opacity: 0.1;*/
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.segment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+button {
+  z-index: 9001;
+  position: relative;
+}
+
+/*visual 동작 끝*/

@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*#visual 시작*/
+#visual{display: flex; justify-content: space-between;}
+#visual > div{width: 50%; height: 100%;}
+#visual .left #soup-nav{display: flex; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); justify-content: center;}
+#visual .left #soup-nav #soup-prev{display: block; width: 66px; height: 66px; background: url(../img/soup-prev.png) no-repeat center; color: transparent; font-size: 0; transition: all 0.5s; cursor: pointer; border-radius: 50%;}
+#visual .left #soup-nav #soup-prev:hover{transform: scale(1.2);}
+#visual .left #soup-nav #soup-next{display: block; width: 66px; height: 66px; background: url(../img/soup-next.png) no-repeat center; color: transparent; font-size: 0; transition: all 0.5s; cursor: pointer; border-radius: 50%;}
+#visual .left #soup-nav #soup-next:hover{transform: scale(1.2);}
+
+#visual .right{background-color: #fff;}
+/*#visual 끝*/
