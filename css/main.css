@@ -3,18 +3,27 @@
 /*모바일 시작*/
 
 /*#visual 시작*/
-
 #visual{display: block;  height: 200vh;}
 #visual > div{width: 100%; height: 100vh;}
-#visual .soup-title,
-#visual .soup-desc {font-size: 30px;}
+#visual .left .soup-title,
+#visual .left .soup-desc {font-size: 30px;}
 #visual .left #soup-nav{display: flex; position: absolute; bottom: 3%; left: 50%; transform: translateX(-50%); justify-content: center;}
-#visual .left #soup-nav #soup-prev{display: block; width: 66px; height: 66px; background: url(../img/soup-prev.png) no-repeat center; color: transparent; font-size: 0; transition: all 0.5s; cursor: pointer; border-radius: 50%;}
+#visual .left #soup-nav #soup-prev{display: block; width: 33px; height: 33px; background: url(../img/soup-prev.png) no-repeat center / cover; color: transparent; font-size: 0; transition: all 0.5s; cursor: pointer; border-radius: 50%;}
 #visual .left #soup-nav #soup-prev:hover{transform: scale(1.2);}
-#visual .left #soup-nav #soup-next{display: block; width: 66px; height: 66px; background: url(../img/soup-next.png) no-repeat center; color: transparent; font-size: 0; transition: all 0.5s; cursor: pointer; border-radius: 50%;}
+#visual .left #soup-nav #soup-next{display: block; width: 33px; height: 33px; background: url(../img/soup-next.png) no-repeat center / cover; color: transparent; font-size: 0; transition: all 0.5s; cursor: pointer; border-radius: 50%;}
 #visual .left #soup-nav #soup-next:hover{transform: scale(1.2);}
 
-#visual .right{background-color: #fff; color: #000;}
+#visual .right{background-color: #fff; color: #000; position: relative;}
+#visual .right .inner{width: calc(100% - 40px); position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+#visual .right .txt-box{padding-left: 10px;}
+#visual .right .txt-box p{font-size: 40px; font-family: 'RixInooAriDuriR'; display: flex; justify-content: space-between; margin-bottom: 30px; letter-spacing: 2px;}
+#visual .right .txt-box p span.reverse{color: #fff; position: relative;}
+#visual .right .txt-box p span.reverse::after{content: ""; display: block; width: 110%; height: 120%; background-color: #000; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
+#visual .right .txt-box p span strong.point_Color_01{color: #fe6c00;}
+#visual .right .txt-box p span strong.point_Color_02{color: #2f44df;}
+#visual .right .txt-box p .turn{animation: turn 3s infinite linear;}
+#visual .right .name{border-top: 2px solid #000; padding-top: 10px;}
+#visual .right .name h1{text-align: right; font-family: 'RixInooAriDuriR'; font-size: 16px; font-weight: 400; letter-spacing: 1px;}
 /*#visual 끝*/
 
 /*모바일 끝*/
@@ -29,11 +38,20 @@
 
 
 /*태블릿 시작*/
-@media screen and (min-width: 1024px) {
-  #visual{display: flex;  height: 100vh;}
-  #visual{display: flex; justify-content: space-between;}
-  #visual .soup-title,
-#visual .soup-desc {font-size: 60px;}
+@media screen and (min-width: 744px) {
+
+  /*#visual 시작*/
+  #visual .left .soup-title,
+  #visual .left .soup-desc {font-size: 45px;}
+  #visual .left #soup-nav #soup-prev,
+  #visual .left #soup-nav #soup-next{width: 44px; height: 44px;}
+
+  #visual .right .inner{width: calc(100% - 60px);}
+  #visual .right .txt-box{padding-left: 40px;}
+  #visual .right .txt-box p{font-size: 60px;}
+  #visual .right .name{border-top: 2px solid #000; padding-top: 15px;}
+  #visual .right .name h1{font-size: 24px;}
+  /*#visual 끝*/
 }/*태블릿 끝*/
 
 
@@ -45,6 +63,17 @@
 
 
 /*PC 시작*/
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1280px) {
+
+  /*#visual 시작*/
+  #visual{display: flex;  height: 100vh;}
+  #visual{display: flex; justify-content: space-between;}
+  #visual .left .soup-title,
+  #visual .left .soup-desc {font-size: 60px;}
+  #visual .left #soup-nav #soup-prev,
+  #visual .left #soup-nav #soup-next{width: 55px; height: 55px;}
+
+  #visual .right .txt-box p{font-size: 80px;}
+  /*#visual 끝*/
   
 }/*PC 끝*/
