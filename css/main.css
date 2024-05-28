@@ -26,8 +26,6 @@
 #visual .right .txt-box p{font-size: 40px; font-family: 'RixInooAriDuriR'; display: flex; justify-content: space-between; margin-bottom: 30px; letter-spacing: 2px;}
 #visual .right .txt-box p span.reverse{color: #fff; position: relative;}
 #visual .right .txt-box p span.reverse::after{content: ""; display: block; width: 110%; height: 120%; background-color: #000; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
-.point_Color_01{color: #fe6c00;}
-.point_Color_02{color: #2f44df;}
 #visual .right .txt-box p .turn{animation: turn 3s infinite linear;}
 #visual .right .name{border-top: 2px solid #000; padding-top: 10px;}
 #visual .right .name h1{text-align: right; font-family: 'RixInooAriDuriR'; font-size: 16px; font-weight: 400; letter-spacing: 1px;}
@@ -38,7 +36,7 @@
 
 
 /*profile 시작*/
-#profile.parallax__item {height: auto; padding: 80px 40px 40px 20px; justify-content: space-between; display: block;}
+#profile.parallax__item {height: auto; padding: 80px 40px 20px 20px; justify-content: space-between; display: block;}
 
 #profile .left .img-box{width: 230px; height: 300px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
 #profile .left .img-box img{width: 100%; height: 100%; object-fit: cover;}
@@ -66,6 +64,7 @@
 
 
 #profile .right > ul > li{border-left: 2px solid #fff; margin-bottom: 50px; padding-left: 5px;}
+#profile .right > ul > li:last-child{margin-right: 0; margin-bottom: 0;}
 #profile .right > ul > li h3{font-size: 35px; margin-bottom: 5px;}
 #profile .right > ul > li ul{padding-left: 20px;}
 #profile .right > ul > li ul li{margin-bottom: 10px;}
@@ -123,7 +122,7 @@
 
 
   /*profile 시작*/
-  #profile.parallax__item{display: flex; justify-content: space-between; padding: 100px 80px 80px 40px;}
+  #profile.parallax__item{display: flex; justify-content: space-between; padding: 100px 80px 40px 40px;}
   #profile .left{width: 200px;}
 
   #profile .left .img-box{width: 200px; height: 255px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
@@ -142,10 +141,7 @@
   #profile .right{width: calc(100% - 240px);}
   #profile .right > ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
   #profile .right > ul li{margin-right: 30px;}
-  #profile .right > ul > li:last-child{margin-right: 0;}
-  
-  #profile .right .skills ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
-  #profile .right .skills ul li{width: 25%;}
+
 
   #profile .right > ul > li h3{font-size: 28px; margin-bottom: 12px;}
   #profile .right > ul > li ul{padding-left: 25px;}
@@ -154,6 +150,8 @@
   #profile .right .year .until{display: block; padding-left: 18px;}
   #profile .right .cont{font-size: 18px;}
   #profile .right .skills ul li{width: 25%;}
+  #profile .right .skills ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
+
 
 
 
@@ -202,16 +200,20 @@
 
 
   /*profile 시작*/
-  #profile.parallax__item{padding: 150px 100px 100px 50px;}
+  #profile.parallax__item{padding: 150px 100px 50px 50px;}
   #profile .left{width: 200px;}
   #profile .left .img-box{width: 200px; height: 255px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
 
-  #profile .right > ul > li{margin-bottom: 50px; padding-left: 8px;}
+  #profile .right > ul > li{margin-bottom: 150px; padding-left: 10px;}
+
 
   #profile .right{width: calc(100% - 240px);}
   #profile .right > ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
   #profile .right > ul li{margin-right: 30px;}
   #profile .right > ul > li:last-child{margin-right: 0;}
+  #profile .right .skills{width: 100%;}
+  #profile .right .skills ul li{width: calc((100% - 200px) / 6);}
+  #profile .right .skills ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
   
 
 

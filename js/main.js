@@ -30,8 +30,17 @@ $(document).ready(function(){//시작
     title: "Let Me Introudce My Self",
     desc: ""
   }, {
-    title: "Grouping example",
-    desc: ["테스트 텍스트".split("")]
+    title: "HTML",
+    desc: "CSS"
+  }, {
+    title: "j-Query",
+    desc: "Figma"
+  }, {
+    title: "Photoshop",
+    desc: "Illustrator"
+  }, {
+    title: "Premiere",
+    desc: "After_Effects"
   }];
   var currentPage = 0;
   //generate content
