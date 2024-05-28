@@ -40,7 +40,7 @@
 /*profile 시작*/
 #profile.parallax__item {height: auto; padding: 80px 40px 40px 20px; justify-content: space-between; display: block;}
 
-#profile .left .img-box{width: 115px; height: 150px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
+#profile .left .img-box{width: 230px; height: 300px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
 #profile .left .img-box img{width: 100%; height: 100%; object-fit: cover;}
 
 #profile .left .txt-box{width: 230px; font-family: 'NanumSquare'; margin: 0 auto;}
@@ -49,9 +49,9 @@
 #profile .left .txt-box .name h2 div:first-child{display: flex; justify-content: space-between;}
 #profile .left .txt-box .name h2 .korean{font-size: 20px; font-weight: 400; transform: translate(-10px, 18px); font-family: 'NanumSquare';}
 #profile .left .txt-box .flex-wrap{margin: 0 auto;}
-#profile .left .txt-box .birthday{font-size: 25px; margin-bottom: 10px;}
-#profile .left .txt-box .e-mail{font-size: 25px; margin-bottom: 10px;}
-#profile .left .txt-box .phone{font-size: 25px; margin-bottom: 40px;}
+#profile .left .txt-box .birthday{font-size: 18px; margin-bottom: 8px;}
+#profile .left .txt-box .e-mail{font-size: 18px; margin-bottom: 8px;}
+#profile .left .txt-box .phone{font-size: 18px; margin-bottom: 30px;}
 
 #profile .left .key-box{width: 230px ;height: 260px; border: 2px solid #fff; border-radius: 25px; padding: 15px 0; margin: 0 auto; margin-bottom: 50px;}
 #profile .left .key-box h3{font-size: 25px; text-align: center; font-weight: normal;}
@@ -124,19 +124,44 @@
 
   /*profile 시작*/
   #profile.parallax__item{display: flex; justify-content: space-between; padding: 100px 80px 80px 40px;}
-  #profile .left{width: 300px;}
+  #profile .left{width: 200px;}
 
-  #profile .left .txt-box{width: 230px;}
+  #profile .left .img-box{width: 200px; height: 255px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
+  #profile .left .txt-box{width: 200px;}
   #profile .left .txt-box .name{width: auto;}
-  #profile .left .txt-box .name h2{font-size: 33px;}
+  #profile .left .txt-box .name h2{font-size: 28px;}
+  #profile .left .txt-box .name h2 .korean{font-size: 18px; transform: translate(-10px, 14px);}
+  #profile .left .txt-box .birthday{font-size: 18px; margin-bottom: 10px;}
+  #profile .left .txt-box .e-mail{font-size: 18px; margin-bottom: 10px;}
+  #profile .left .txt-box .phone{font-size: 18px; margin-bottom: 40px;}
+  #profile .left .key-box{width: 200px ;height: 260px; border: 2px solid #fff; border-radius: 25px; padding: 15px 0; margin: 0 auto; margin-bottom: 50px;}
+  #profile .left .key-box h3{font-size: 25px; text-align: center; font-weight: normal;}
+  #profile .left .key-box ul{position: relative; width: 100%;}
+  #profile .left .key-box ul li{font-size: 18px; position: absolute;}
 
-  #profile .right{width: calc(100% - 340px);}
+  #profile .right{width: calc(100% - 240px);}
   #profile .right > ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
   #profile .right > ul li{margin-right: 30px;}
   #profile .right > ul > li:last-child{margin-right: 0;}
   
   #profile .right .skills ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
   #profile .right .skills ul li{width: 25%;}
+
+  #profile .right > ul > li h3{font-size: 28px; margin-bottom: 12px;}
+  #profile .right > ul > li ul{padding-left: 25px;}
+  #profile .right > ul > li ul li{margin-bottom: 12px;}
+  #profile .right .year{font-size: 22px; margin-bottom: 2px;}
+  #profile .right .year .until{display: block; padding-left: 18px;}
+  #profile .right .cont{font-size: 18px;}
+  #profile .right .skills ul li{width: 25%;}
+
+
+
+
+
+
+
+
 
 
   /*profile 끝*/
@@ -178,34 +203,22 @@
 
   /*profile 시작*/
   #profile.parallax__item{padding: 150px 100px 100px 50px;}
-  #profile .left{width: 400px;}
+  #profile .left{width: 200px;}
+  #profile .left .img-box{width: 200px; height: 255px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
 
-  #profile .left .img-box{width: 145px; height: 195px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
-  #profile .left .txt-box{width: 290px;}
-  #profile .left .txt-box .name{width: auto;}
-  #profile .left .txt-box .name h2{font-size: 44px;}
-  #profile .left .txt-box .name h2 .korean{font-size: 25px; transform: translate(0px, 24px);}
+  #profile .right > ul > li{margin-bottom: 50px; padding-left: 8px;}
 
-
-
-  #profile .left .txt-box .birthday{font-size: 25px; margin-bottom: 10px;}
-  #profile .left .txt-box .e-mail{font-size: 25px; margin-bottom: 10px;}
-  #profile .left .txt-box .phone{font-size: 25px; margin-bottom: 40px;}
-
-  #profile .left .key-box{width: 230px ;height: 260px; border: 2px solid #fff; border-radius: 25px; padding: 15px 0; margin: 0 auto; margin-bottom: 50px;}
-  #profile .left .key-box h3{font-size: 25px; text-align: center; font-weight: normal;}
-  #profile .left .key-box ul{position: relative; width: 100%;}
-  #profile .left .key-box ul li{font-size: 20px; position: absolute;}
-
-
-
-
-  #profile .right{width: calc(100% - 400px);}
+  #profile .right{width: calc(100% - 240px);}
   #profile .right > ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
   #profile .right > ul li{margin-right: 30px;}
   #profile .right > ul > li:last-child{margin-right: 0;}
   
-  #profile .right .skills ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
-  #profile .right .skills ul li{width: 25%;}
+
+
+
+
+
+
+
   /*profile 끝*/
 }/*PC 끝*/
