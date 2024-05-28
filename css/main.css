@@ -11,7 +11,7 @@
 #visual{display: block;  height: 200vh;}
 #visual > div{width: 100%; height: 100vh;}
 #visual .left .soup-title,
-#visual .left .soup-desc {font-size: 30px;}
+#visual .left .soup-desc {font-size: 35px;}
 #visual .left #soup-nav{display: flex; position: absolute; bottom: 3%; left: 50%; transform: translateX(-50%); justify-content: center;}
 #visual .left #soup-nav #soup-prev{display: block; width: 33px; height: 33px; background: url(../img/soup-prev.png) no-repeat center / cover; color: transparent; font-size: 0; transition: all 0.5s; cursor: pointer; border-radius: 50%;}
 #visual .left #soup-nav #soup-prev:hover{transform: scale(1.2);}
