@@ -5,3 +5,13 @@
   0%{transform: rotate(0);}
   100%{transform: rotate(360deg);}
 }/*visual .turn 애니메이션 끝*/
+
+/*btn 애니메이션 시작*/
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}/*btn 애니메이션 끝*/

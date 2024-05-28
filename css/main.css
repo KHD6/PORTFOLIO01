@@ -74,16 +74,48 @@
 
 #profile .right .skills ul{display: flex; flex-wrap: wrap; justify-content: space-between; padding-top: 15px;}
 #profile .right .skills ul li{width: 50%; min-width: 60px; margin-bottom: 25px;}
-#profile .right .skills ul li .cont{padding-top: 70px; display: block; background-position: center top; background-repeat: no-repeat; text-align: center; background-size: 60px; margin: 0 auto;}
-#profile .right .skills ul li:nth-child(1) .cont{background-image: url(../img/percent_90.png);}
-#profile .right .skills ul li:nth-child(2) .cont{background-image: url(../img/percent_80.png);}
-#profile .right .skills ul li:nth-child(3) .cont{background-image: url(../img/percent_60.png);}
-#profile .right .skills ul li:nth-child(4) .cont{background-image: url(../img/percent_70.png);}
-#profile .right .skills ul li:nth-child(5) .cont{background-image: url(../img/percent_60.png);}
-#profile .right .skills ul li:nth-child(6) .cont{background-image: url(../img/percent_60.png);}
-
-
+#profile .right .skills ul li::before{content: ""; display: block; width: 60px; height: 60px; background-position: center; background-repeat: no-repeat; background-size: 60px; margin: 0 auto; margin: 0 auto 10px;}
+#profile .right .skills ul li:nth-child(1)::before{background-image: url(../img/percent_90.png);}
+#profile .right .skills ul li:nth-child(2)::before{background-image: url(../img/percent_80.png);}
+#profile .right .skills ul li:nth-child(3)::before{background-image: url(../img/percent_60.png);}
+#profile .right .skills ul li:nth-child(4)::before{background-image: url(../img/percent_70.png);}
+#profile .right .skills ul li:nth-child(5)::before{background-image: url(../img/percent_60.png);}
+#profile .right .skills ul li:nth-child(6)::before{background-image: url(../img/percent_60.png);}
+#profile .right .skills ul li .cont{text-align: center;}
 /*profile 끝*/
+
+
+
+
+
+/*design 시작*/
+.design > section{display: block; padding: 80px 40px 20px 20px}
+.design .left .title-box{width: 250px; margin: 0 auto;font-size: 22px; margin-bottom: 20px;}
+.design .left .title-box h3{font-size: 25px; font-family: 'OKGUNG'; font-weight: normal;}
+.design .left .title-box h2{height: 76px;}
+.design .left .title-box h2 img{width: 100%; height: 100%; object-fit: cover;}
+.design .left .title-box p{display: flex; justify-content: space-between;}
+
+.design .left .con-box{width: 250px; margin: 0 auto;}
+.design .left .con-box .contri{display: flex; justify-content: space-between; margin-bottom: 40px;}
+.design .left .con-box .contri p{margin-right: 10px;}
+.design .left .con-box .contri ul.contri-box{width: 170px; display: flex; justify-content: space-between;}
+.design .left .con-box .contri ul.contri-box li{font-size: 0; color: transparent; width: 25px; height: 25px; background-color: #2f44df;}
+
+.design .left .con-box .txt-box{display: none;}
+
+.design .left .con-box .btn-box a{border-radius: 100px 0 100px 0;}
+.design .left .con-box .btn-box span{font-size: 22px;}
+
+
+.design .right .mockup-box img{width: 100%; height: 100%; object-fit: cover;}
+
+
+/*design 끝*/
+
+
+
+
 
 /*모바일 끝*/
 
@@ -142,7 +174,6 @@
   #profile .right > ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
   #profile .right > ul li{margin-right: 30px;}
 
-
   #profile .right > ul > li h3{font-size: 28px; margin-bottom: 12px;}
   #profile .right > ul > li ul{padding-left: 25px;}
   #profile .right > ul > li ul li{margin-bottom: 12px;}
@@ -151,18 +182,19 @@
   #profile .right .cont{font-size: 18px;}
   #profile .right .skills ul li{width: 25%;}
   #profile .right .skills ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
-
-
-
-
-
-
-
-
-
-
-
+  #profile .right .skills ul li::before{margin: 0 auto 10px;}
+  #profile .right .skills ul li .cont{text-align: center;}
   /*profile 끝*/
+
+
+
+
+
+  /*design 시작*/
+  /*design 끝*/
+
+
+
 }/*태블릿 끝*/
 
 
@@ -204,23 +236,26 @@
   #profile .left{width: 200px;}
   #profile .left .img-box{width: 200px; height: 255px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
 
-  #profile .right > ul > li{margin-bottom: 80px; padding-left: 10px;}
+  #profile .right > ul > li{margin-bottom: 30px; padding-left: 10px;}
 
 
   #profile .right{width: calc(100% - 240px);}
   #profile .right > ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
-  #profile .right > ul li{margin-right: 30px;}
+  #profile .right > ul li{width: 50%;; margin-right: 0px;}
   #profile .right > ul > li:last-child{margin-right: 0;}
-  #profile .right .skills{width: 100%;}
-  #profile .right .skills ul li{width: calc((100% - 200px) / 6);}
+  #profile .right .skills{width: 100%; max-width: 750px;}
   #profile .right .skills ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
-  
-
-
-
-
-
-
-
+  #profile .right .skills ul li{width: 15%;}
   /*profile 끝*/
+
+
+
+
+
+  /*design 시작*/
+  .design > section{display: flex;}
+  /*design 끝*/
+
+
+
 }/*PC 끝*/
