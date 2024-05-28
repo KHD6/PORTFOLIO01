@@ -122,7 +122,7 @@
 
 
   /*profile 시작*/
-  #profile.parallax__item{display: flex; justify-content: space-between; padding: 100px 80px 40px 40px;}
+  #profile.parallax__item{display: flex; justify-content: space-between; padding: 100px 80px 40px 40px;   align-items: baseline;}
   #profile .left{width: 200px;}
 
   #profile .left .img-box{width: 200px; height: 255px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
@@ -204,7 +204,7 @@
   #profile .left{width: 200px;}
   #profile .left .img-box{width: 200px; height: 255px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
 
-  #profile .right > ul > li{margin-bottom: 150px; padding-left: 10px;}
+  #profile .right > ul > li{margin-bottom: 80px; padding-left: 10px;}
 
 
   #profile .right{width: calc(100% - 240px);}
