@@ -90,23 +90,23 @@
 
 /*design 시작*/
 .design > section{display: block; padding: 80px 40px 20px 20px}
-.design .left .title-box{width: 250px; margin: 0 auto;font-size: 22px; margin-bottom: 20px;}
+.design .left .title-box{width: 250px; margin: 0 auto 20px;font-size: 22px;}
 .design .left .title-box h3{font-size: 25px; font-family: 'OKGUNG'; font-weight: normal;}
 .design .left .title-box h2{height: 76px;}
-.design .left .title-box h2 img{width: 100%; height: 100%; object-fit: cover;}
+.design .left .title-box h2 img{width: 100%; height: 100%; object-fit: contain;}
 .design .left .title-box p{display: flex; justify-content: space-between;}
 
 .design .left .con-box{width: 250px; margin: 0 auto;}
 .design .left .con-box .contri{display: flex; justify-content: space-between; margin-bottom: 40px;}
-.design .left .con-box .contri p{margin-right: 10px;}
+.design .left .con-box .contri p{margin-right: 10px; font-size: 22px;}
 .design .left .con-box .contri ul.contri-box{width: 170px; display: flex; justify-content: space-between;}
 .design .left .con-box .contri ul.contri-box li{font-size: 0; color: transparent; width: 25px; height: 25px; background-color: #2f44df;}
 
 .design .left .con-box .txt-box{display: none;}
 
+.design .left .con-box .btn-box{height: 180px;}
 .design .left .con-box .btn-box a{border-radius: 100px 0 100px 0;}
 .design .left .con-box .btn-box span{font-size: 22px;}
-
 
 .design .right .mockup-box img{width: 100%; height: 100%; object-fit: cover;}
 
@@ -191,6 +191,20 @@
 
 
   /*design 시작*/
+
+  .design > section{display: block; padding: 100px 80px 40px 40px} 
+  .design .left{display: flex; justify-content: space-between; margin-bottom: 40px;}
+  .design .left .title-box{margin: 0 auto;}
+
+  .design .left .con-box{width: calc(100% - 290px); margin: 0 auto;}
+  .design .left .con-box .contri{display: flex; justify-content: left; margin-bottom: 20px;}
+
+  .design .left .con-box .txt-box{display: block; border-left: 2px solid #FFF; padding-left: 5px;}
+  .design .left .con-box .txt-box p{font-size: 18px; line-height: 1.35; margin-bottom: 40px;}
+  .design .left .con-box .btn-box{display: flex; width: 400px; height: auto;}
+
+
+
   /*design 끝*/
 
 
@@ -253,8 +267,31 @@
 
 
   /*design 시작*/
-  .design > section{display: flex;}
+  .design > section{display: flex; padding: 150px 100px 50px 50px; justify-content: space-between;} 
+  .design .left{display: block; margin: 0px; width: 40%;}
+
+
+  .design .left .title-box{width: 100%; margin-bottom: 50px;font-size: 22px;}
+  .design .left .title-box h3{font-size: 35px;}
+  .design .left .title-box h2{max-width: 500px; height: 150px; text-align: left;}
+  .design .left .title-box h2 img{object-fit: contain;}
+  .design .left .title-box p{max-width: 500px;}
+
+  .design .left .con-box{width: 100%; margin: 0;}
+  .design .left .con-box .contri{margin-bottom: 25px;}
+  .design .left .con-box .contri p{margin-right: 20px; font-size: 25px;}
+  .design .left .con-box .contri ul.contri-box{width: 250px;}
+  .design .left .con-box .contri ul.contri-box li{width: 30px; height: 30px;}
+
+  .design .left .con-box .txt-box{max-width: 500px;}
+
+  .design .right{width: 60%;}
+
+
   /*design 끝*/
+
+
+
 
 
 
