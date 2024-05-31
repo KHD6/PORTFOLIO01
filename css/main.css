@@ -36,7 +36,7 @@
 
 
 /*profile 시작*/
-#profile.parallax__item {height: auto; padding: 80px 40px 20px 20px; justify-content: space-between; display: block;}
+#profile.parallax__item {height: auto; padding: 80px 40px 20px 20px; display: block;}
 
 #profile .left .img-box{width: 230px; height: 300px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
 #profile .left .img-box img{width: 100%; height: 100%; object-fit: cover;}
@@ -106,18 +106,29 @@
 .design .left .con-box .txt-box{display: none;}
 
 .design .left .con-box .btn-box{height: 170px;}
-.design .left .con-box .btn-box a{border-radius: 100px 0 100px 0;}
-.design .left .con-box .btn-box span{font-size: 22px;}
+.design .left .con-box .btn-box a{border-radius: 100px 0 100px 0;font-size: 22px;}
+
 
 .design .right .mockup-box img{width: 100%; height: 100%; object-fit: cover;}
 
 .design #design03 .left .con-box .contri:nth-child(1) ul.contri-box li:nth-child(5){background-color: #ddd;}
 .design #design03 .left .con-box .contri:nth-child(2) ul.contri-box li:nth-child(4){background-color: #ddd;}
 .design #design03 .left .con-box .contri:nth-child(2) ul.contri-box li:nth-child(5){background-color: #ddd;}
-
-
-
 /*design 끝*/
+
+
+
+
+
+/*end 시작*/
+#end.parallax__item {padding: 80px 40px 20px 20px; display: block;}
+#end .txt-wrap{position: absolute; top: 50%; left: calc(50% - 10px); transform: translate(-50%, -50%); width: calc(100vw - 60px);}
+
+#end .txt-box01{margin-bottom: 50px; width: 100%;}
+#end .txt-box01 p{display: flex; justify-content: space-between; font-size: 32px;  font-family: 'RixInooAriDuriR'; margin-bottom: 30px;}
+#end .txt-box01 p .reverse{color: #000; position: relative;}
+#end .txt-box01 p .reverse::after{content: ""; display: block; width: 110%; height: 120%; background-color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
+/*end 끝*/
 
 
 
@@ -209,10 +220,20 @@
   .design .left .con-box .txt-box p{font-size: 16px; line-height: 1.35; margin-bottom: 10px;}
   .design .left .con-box .txt-box p.del{display: none;}
   .design .left .con-box .btn-box{display: flex; width: 400px; height: auto;}
-
-
-
   /*design 끝*/
+
+
+
+
+
+  /*end 시작*/
+  #end.parallax__item {padding: 100px 80px 40px 40px;}
+  #end .txt-wrap{width: calc(100vw - 120px); left: calc(50% - 20px);}
+
+  #end .txt-box01{margin-bottom: 50px;}
+  #end .txt-box01 p{font-size: 60px; margin-bottom: 50px;}
+
+  /*end 끝*/
 
 
 
@@ -294,9 +315,17 @@
   .design .left .con-box .txt-box p.del{display: block;}
 
   .design .right{width: 60%;}
-
-
   /*design 끝*/
+
+
+
+
+
+  /*end 시작*/
+  #end.parallax__item {padding: 150px 100px 50px 50px;}
+  #end .txt-wrap{width: calc(100vw - 150px); left: calc(50% - 25px);}
+  #end .txt-box01{max-width: 50%; margin: 0 auto;}
+  /*end 끝*/
 
 
 

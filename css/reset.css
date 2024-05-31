@@ -132,6 +132,15 @@ a.wave-btn span {
   position: relative;
   z-index: 1;
   color: white;
+  transition: all 0.5s;
+  transform-origin: left bottom;
+}
+a.wave-btn:hover span {
+  color: #fe6c00;
+}
+a.wave-btn strong {
+  color: #fe6c00;
+  font-weight: normal;
 }
 a.wave-btn .wave {
   width: 200px;
