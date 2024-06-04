@@ -169,6 +169,8 @@ $(document).ready(function(){//시작
   }
 
   /*나타내기 시작*/
+  $("#visual .reverse-bg.right").addClass("parallax__item__desc").addClass("reveal")
+  $("#visual .reverse-bg.left").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
   if($(window).width() < 1024){
     $("#profile .right > ul > li").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
   }else{
@@ -208,7 +210,7 @@ $(document).ready(function(){//시작
 
       gsap.fromTo(item, 
           {autoAlpha: 0, x: x, y: y}, 
-          {autoAlpha: 1, x: 0, y: 0, delay: delay, duration: 1.25, overwrite: "auto", ease: "expo"}
+          {autoAlpha: 1, x: 0, y: 0, delay: 0.25, duration: 1.25, overwrite: "auto", ease: "expo"}
       );
   };
 
