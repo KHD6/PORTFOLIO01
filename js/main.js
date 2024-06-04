@@ -39,7 +39,7 @@ $(document).ready(function(){//시작
     title: "Photoshop",
     desc: "Illustrator"
   }, {
-    title: "Premiere",
+    title: "Premiere_Pro",
     desc: "After_Effects"
   }];
   var currentPage = 0;
