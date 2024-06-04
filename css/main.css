@@ -276,8 +276,8 @@
 
 
   #visual .right .txt-box p{font-size: 60px;}
-  #visual .right .txt-box div p.reverse .reverse-bg.right.ani{animation: rebg 1.75s 0.75s backwards;}
-  #visual .right .txt-box div p.reverse .reverse-bg.left.ani{animation: rebg 1.75s 1s backwards;}
+  #visual .right .txt-box div p.reverse .reverse-bg.right.ani{animation: rebg 1.75s 1.1s backwards;}
+  #visual .right .txt-box div p.reverse .reverse-bg.left.ani{animation: rebg 1.75s 1.35s backwards;}
   /*#visual 끝*/
 
 
