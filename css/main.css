@@ -23,7 +23,7 @@
 #visual .right{background-color: #fff; color: #000; height: 60vh; position: relative;}
 #visual .right .inner{width: calc(100% - 40px); position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
 #visual .right .txt-box{padding-left: 10px;}
-#visual .right .txt-box div{font-size: 40px; font-family: 'RixInooAriDuriR'; display: flex; justify-content: space-between; margin-bottom: 30px; letter-spacing: 2px;}
+#visual .right .txt-box > div{font-size: 40px; font-family: 'RixInooAriDuriR'; display: flex; justify-content: space-between; margin-bottom: 30px; letter-spacing: 2px;}
 #visual .right .txt-box div p.reverse{color: #fff; position: relative;}
 #visual .right .txt-box div p.reverse .reverse-bg{display: block; width: 110%; height: 120%; background-color: #000; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
 #visual .right .txt-box .turn{animation: turn 3s infinite linear;}
