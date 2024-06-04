@@ -26,7 +26,7 @@
 #visual .right .txt-box div{font-size: 40px; font-family: 'RixInooAriDuriR'; display: flex; justify-content: space-between; margin-bottom: 30px; letter-spacing: 2px;}
 #visual .right .txt-box div p.reverse{color: #fff; position: relative;}
 #visual .right .txt-box div p.reverse .reverse-bg{display: block; width: 110%; height: 120%; background-color: #000; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
-#visual .right .txt-box p .turn{animation: turn 3s infinite linear;}
+#visual .right .txt-box .turn{animation: turn 3s infinite linear;}
 #visual .right .name{border-top: 2px solid #000; padding-top: 10px;}
 #visual .right .name h1{text-align: right; font-family: 'RixInooAriDuriR'; font-size: 16px; font-weight: 400; letter-spacing: 1px;}
 /*#visual 끝*/
