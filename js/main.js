@@ -169,16 +169,19 @@ $(document).ready(function(){//시작
   }
 
   /*나타내기 시작*/
-  $("#visual .reverse-bg.right").addClass("parallax__item__desc").addClass("reveal")
-  $("#visual .reverse-bg.left").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
+
   if($(window).width() < 1024){
     $("#profile .right > ul > li").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
+    $("#visual .reverse-bg.right").addClass("parallax__item__desc").addClass("reveal")
+    $("#visual .reverse-bg.left").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
   }else{
     $("#profile .right > ul > li").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_BTT")
   }
   $(window).resize(function(){
     if($(window).width() < 1024){
       $("#profile .right > ul > li").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
+      $("#visual .reverse-bg.right").addClass("parallax__item__desc").addClass("reveal")
+      $("#visual .reverse-bg.left").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
     }else{
       $("#profile .right > ul > li").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_BTT")
     }
