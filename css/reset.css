@@ -19,6 +19,8 @@ ul, ol{list-style: none;}
 img{vertical-align: top; border: 0;}
 .point_Color_shadow_01{color: #fe6c00; text-shadow: 1px 1px 1px #fff;}
 .point_Color_shadow_02{color: #2f44df; text-shadow: 1px 1px 1px #fff;}
+.point_Color_shadow_03{color: #fe6c00; text-shadow: 1px 1px 1px #000;}
+.point_Color_shadow_04{color: #2f44df; text-shadow: 1px 1px 1px #000;}
 .point_Color_01{color: #fe6c00;}
 .point_Color_02{color: #2f44df;}
 
