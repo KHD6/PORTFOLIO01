@@ -176,6 +176,8 @@ $(document).ready(function(){//시작
     $("#visual .reverse-bg.left").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
   }else{
     $("#profile .right > ul > li").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_BTT")
+    $("#visual .reverse-bg.right").addClass("ani")
+    $("#visual .reverse-bg.left").addClass("ani")
   }
   $(window).resize(function(){
     if($(window).width() < 1024){
@@ -184,6 +186,8 @@ $(document).ready(function(){//시작
       $("#visual .reverse-bg.left").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
     }else{
       $("#profile .right > ul > li").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_BTT")
+      $("#visual .reverse-bg.right").addClass("ani")
+      $("#visual .reverse-bg.left").addClass("ani")
     }
   });
 

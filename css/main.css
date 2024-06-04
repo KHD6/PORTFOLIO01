@@ -90,7 +90,7 @@
 
 /*design 시작*/
 .design > section{display: block; padding: 80px 40px 20px 20px}
-.design .left .title-box{width: 250px; margin: 0 auto 20px;font-size: 22px;}
+.design .left .title-box{width: 250px; margin: 0 auto 20px; font-size: 22px;}
 .design .left .title-box h3{font-size: 25px; font-family: 'OKGUNG'; font-weight: normal;}
 .design .left .title-box h2{margin-bottom: 3px;}
 .design .left .title-box h2 img{width: 100%;}
@@ -124,7 +124,7 @@
 #end.parallax__item {padding: 80px 40px 20px 20px; display: block;}
 #end .txt-wrap{position: absolute; top: 50%; left: calc(50% - 10px); transform: translate(-50%, -50%); width: calc(100vw - 60px);}
 
-#end .txt-box01{margin-bottom: 80px; width: 100%;}
+#end .txt-box01{margin: 0 auto 80px; width: 260px;}
 #end .txt-box01 p{display: flex; justify-content: space-between; font-size: 32px;  font-family: 'RixInooAriDuriR'; margin-bottom: 40px;}
 #end .txt-box01 p .reverse{color: #000; position: relative;}
 #end .txt-box01 p .reverse::after{content: ""; display: block; width: 110%; height: 120%; background-color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
@@ -185,9 +185,9 @@
   #profile .left .txt-box .name{width: auto;}
   #profile .left .txt-box .name h2{font-size: 28px;}
   #profile .left .txt-box .name h2 .korean{font-size: 18px; transform: translate(-10px, 14px);}
-  #profile .left .txt-box .birthday{font-size: 18px; margin-bottom: 10px;}
-  #profile .left .txt-box .e-mail{font-size: 18px; margin-bottom: 10px;}
-  #profile .left .txt-box .phone{font-size: 18px; margin-bottom: 40px;}
+  #profile .left .txt-box .birthday{font-size: 20px; margin-bottom: 10px;}
+  #profile .left .txt-box .e-mail{font-size: 20px; margin-bottom: 10px;}
+  #profile .left .txt-box .phone{font-size: 20px; margin-bottom: 40px;}
   #profile .left .key-box{width: 200px ;height: 260px; border: 2px solid #fff; border-radius: 25px; padding: 15px 0; margin: 0 auto; margin-bottom: 50px;}
   #profile .left .key-box h3{font-size: 25px; text-align: center; font-weight: normal;}
   #profile .left .key-box ul{position: relative; width: 100%;}
@@ -197,12 +197,12 @@
   #profile .right > ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
   #profile .right > ul li{margin-right: 30px;}
 
-  #profile .right > ul > li h3{font-size: 28px; margin-bottom: 12px;}
+  #profile .right > ul > li h3{font-size: 30px; margin-bottom: 12px;}
   #profile .right > ul > li ul{padding-left: 25px;}
   #profile .right > ul > li ul li{margin-bottom: 12px;}
-  #profile .right .year{font-size: 22px; margin-bottom: 2px;}
+  #profile .right .year{font-size: 24px; margin-bottom: 2px;}
   #profile .right .year .until{display: block; padding-left: 18px;}
-  #profile .right .cont{font-size: 18px;}
+  #profile .right .cont{font-size: 20px;}
   #profile .right .skills ul li{width: 25%;}
   #profile .right .skills ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
   #profile .right .skills ul li::before{margin: 0 auto 10px;}
@@ -234,9 +234,9 @@
 
   /*end 시작*/
   #end.parallax__item {padding: 100px 80px 40px 40px;}
-  #end .txt-wrap{width: calc(100vw - 120px); left: calc(50% - 20px);}
+  #end .txt-wrap{width: calc(100vw - 220px); left: calc(50% - 20px);}
 
-  #end .txt-box01{margin-bottom: 100px;}
+  #end .txt-box01{margin: 40px auto 100px; width: 500px;}
   #end .txt-box01 p{font-size: 60px; margin-bottom: 50px;}
 
 
@@ -256,7 +256,7 @@
 
 
 
-/*PC 시작*/
+/*1024~ 시작*/
 @media screen and (min-width: 1024px) {
 
   .wrap-bg .horaizontal-line{top: 50px; left: 0;}
@@ -276,6 +276,8 @@
 
 
   #visual .right .txt-box p{font-size: 60px;}
+  #visual .right .txt-box div p.reverse .reverse-bg.right.ani{animation: rebg 1.75s 0.5s backwards;}
+  #visual .right .txt-box div p.reverse .reverse-bg.left.ani{animation: rebg 1.75s 1s backwards;}
   /*#visual 끝*/
 
 
@@ -286,9 +288,11 @@
   #profile.parallax__item{padding: 150px 100px 50px 50px;}
   #profile .left{width: 200px;}
   #profile .left .img-box{width: 200px; height: 255px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
+  #profile .left .txt-box .birthday{font-size: 22px; margin-bottom: 8px;}
+  #profile .left .txt-box .e-mail{font-size: 20px; margin-bottom: 8px;}
+  #profile .left .txt-box .phone{font-size: 22px; margin-bottom: 30px;}
 
   #profile .right > ul > li{margin-bottom: 30px; padding-left: 10px;}
-
 
   #profile .right{width: calc(100% - 240px);}
   #profile .right > ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
@@ -308,8 +312,9 @@
   .design .left{display: block; margin: 0px; width: 40%;}
 
 
-  .design .left .title-box{width: 100%; margin-bottom: 30px;font-size: 22px;}
+  .design .left .title-box{width: 70%; margin: 0 0 30px;font-size: 22px;}
   .design .left .title-box h3{font-size: 35px;}
+  .design .left .title-box p{font-size: 17px;}
 
 
 
@@ -333,7 +338,7 @@
   /*end 시작*/
   #end.parallax__item {padding: 150px 100px 50px 50px;}
   #end .txt-wrap{width: calc(100vw - 150px); left: calc(50% - 25px);}
-  #end .txt-box01{min-width: 55%; max-width: 60%; margin: 0 auto}
+  #end .txt-box01{margin: 40px auto 100px; width: 500px;}
   #end .txt-box01 p{ margin-bottom: 60px;}
 
   #end .txt-box02{width: 400px;}
@@ -346,4 +351,52 @@
 
 
 
-}/*PC 끝*/
+}/*1024~ 끝*/
+
+
+
+
+
+/*1440~ 시작*/
+@media screen and (min-width: 1440px) {
+
+  /*#visual 시작*/
+  #visual .right .txt-box p{font-size: 90px;}
+  /*#visual 끝*/
+
+
+
+
+
+  /*profile 시작*/
+  #profile .left{width: 300px;}
+
+  #profile .right{width: calc(100% - 340px);}
+  #profile .right > ul > li h3{font-size: 35px; margin-bottom: 15px;}
+  #profile .right .year{font-size: 28px; margin-bottom: 2px;}
+  #profile .right .cont{font-size: 22px;}
+
+
+  /*profile 끝*/
+
+
+
+
+
+  /*design 시작*/
+  /*design 끝*/
+
+
+
+
+
+  /*end 시작*/
+  /*end 끝*/
+
+
+
+
+
+
+}/*1440~ 끝*/
+

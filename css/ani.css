@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/*visual .reverse-bg 애니메이션 시작*/
+@keyframes rebg {
+  0%{transform: translate(-50%, 25%); opacity: 0;}
+  100%{transform: translate(-50%, -50%); opacity: 1;}
+}/*visual .reverse-bg 애니메이션 끝*/
+
 /*visual .turn 애니메이션 시작*/
 @keyframes turn {
   0%{transform: rotate(0);}
