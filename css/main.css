@@ -124,10 +124,16 @@
 #end.parallax__item {padding: 80px 40px 20px 20px; display: block;}
 #end .txt-wrap{position: absolute; top: 50%; left: calc(50% - 10px); transform: translate(-50%, -50%); width: calc(100vw - 60px);}
 
-#end .txt-box01{margin-bottom: 50px; width: 100%;}
-#end .txt-box01 p{display: flex; justify-content: space-between; font-size: 32px;  font-family: 'RixInooAriDuriR'; margin-bottom: 30px;}
+#end .txt-box01{margin-bottom: 80px; width: 100%;}
+#end .txt-box01 p{display: flex; justify-content: space-between; font-size: 32px;  font-family: 'RixInooAriDuriR'; margin-bottom: 40px;}
 #end .txt-box01 p .reverse{color: #000; position: relative;}
 #end .txt-box01 p .reverse::after{content: ""; display: block; width: 110%; height: 120%; background-color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
+#end .txt-box01 .swing{transform-origin: center bottom; transform: rotate(45deg) ;animation: swing 1.5s infinite linear;}
+
+#end .txt-box02{width: 260px; margin: 0 auto;}
+#end .txt-box02 li{display: flex; justify-content: space-between; margin-bottom: 20px;}
+#end .txt-box02 p{font-size: 16px;}
+#end .txt-box02 p:first-child{padding-right: 5px; border-right: 2px solid #fff;}
 /*end 끝*/
 
 
@@ -230,9 +236,12 @@
   #end.parallax__item {padding: 100px 80px 40px 40px;}
   #end .txt-wrap{width: calc(100vw - 120px); left: calc(50% - 20px);}
 
-  #end .txt-box01{margin-bottom: 50px;}
+  #end .txt-box01{margin-bottom: 100px;}
   #end .txt-box01 p{font-size: 60px; margin-bottom: 50px;}
 
+
+  #end .txt-box02 li{display: flex; justify-content: space-between; margin-bottom: 25px;}
+  #end .txt-box02 p{font-size: 18px;}
   /*end 끝*/
 
 
@@ -324,7 +333,12 @@
   /*end 시작*/
   #end.parallax__item {padding: 150px 100px 50px 50px;}
   #end .txt-wrap{width: calc(100vw - 150px); left: calc(50% - 25px);}
-  #end .txt-box01{max-width: 50%; margin: 0 auto;}
+  #end .txt-box01{min-width: 55%; max-width: 60%; margin: 0 auto}
+  #end .txt-box01 p{ margin-bottom: 60px;}
+
+  #end .txt-box02{width: 400px;}
+  #end .txt-box02 li{margin-bottom: 20px;}
+  #end .txt-box02 p{font-size: 20px;}
   /*end 끝*/
 
 

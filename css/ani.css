@@ -15,3 +15,12 @@
     transform: translate(-50%, -75%) rotate(360deg);
   }
 }/*btn 애니메이션 끝*/
+
+/*end .swing 애니메이션 시작*/
+@keyframes swing {
+  0%{transform: rotate(0);}
+  25%{transform: rotate(20deg);}
+  50%{transform: rotate(0);}
+  75%{transform: rotate(-20deg);}
+  100%{transform: rotate(0);}
+}/*end .swing 애니메이션 끝*/
