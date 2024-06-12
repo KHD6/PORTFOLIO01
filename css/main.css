@@ -5,7 +5,7 @@
 .wrap-bg{width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;}
 .wrap-bg .horaizontal-line{width: 100%; height: 2px; background-color: #fff; position: absolute; top: 20px; left: 0;}
 .wrap-bg .vertical-line{width: 2px; height: 100%; background-color: #fff; position: absolute; top: 0; right: 20px;}
-.wrap-bg h1{font-size: 20px; font-family: 'OKGUNG'; position: absolute; top: 20px; right: 40px; transform: translateY(-50%); background-color: #000; padding: 0 20px;}
+.wrap-bg h2{font-size: 20px; font-family: 'OKGUNG'; position: absolute; top: 20px; right: 40px; transform: translateY(-50%); background-color: #000; padding: 0 20px;}
 
 /*#visual 시작*/
 #visual{display: block;  height: auto;}
@@ -43,9 +43,9 @@
 
 #profile .left .txt-box{width: 230px; font-family: 'NanumSquare'; margin: 0 auto;}
 #profile .left .txt-box .name{margin: 0 auto 20px; width: 215px;}
-#profile .left .txt-box .name h2{font-size: 30px; font-family: 'OKGUNG'; letter-spacing: 2px;}
-#profile .left .txt-box .name h2 div:first-child{display: flex; justify-content: space-between;}
-#profile .left .txt-box .name h2 .korean{font-size: 20px; font-weight: 400; transform: translate(-10px, 18px); font-family: 'NanumSquare';}
+#profile .left .txt-box .name h3{font-size: 30px; font-family: 'OKGUNG'; letter-spacing: 2px;}
+#profile .left .txt-box .name h3 div:first-child{display: flex; justify-content: space-between;}
+#profile .left .txt-box .name h3 .korean{font-size: 20px; font-weight: 400; transform: translate(-10px, 18px); font-family: 'NanumSquare';}
 #profile .left .txt-box .flex-wrap{margin: 0 auto;}
 #profile .left .txt-box .birthday{font-size: 18px; margin-bottom: 8px;}
 #profile .left .txt-box .e-mail{font-size: 18px; margin-bottom: 8px;}
@@ -92,8 +92,8 @@
 .design > section{display: block; padding: 80px 40px 20px 20px}
 .design .left .title-box{width: 250px; margin: 0 auto 20px; font-size: 22px;}
 .design .left .title-box h3{font-size: 25px; font-family: 'OKGUNG'; font-weight: normal;}
-.design .left .title-box h2{margin-bottom: 3px;}
-.design .left .title-box h2 img{width: 100%;}
+.design .left .title-box h3{margin-bottom: 3px;}
+.design .left .title-box h3 img{width: 100%;}
 .design .left .title-box p{display: flex; justify-content: space-between; font-size: 15px;}
 
 .design .left .con-box{width: 250px; margin: 0 auto;}
@@ -156,7 +156,7 @@
 
   .wrap-bg .horaizontal-line{top: 40px; left: 0;}
   .wrap-bg .vertical-line{top: 0; right: 40px;}
-  .wrap-bg h1{font-size: 32px; top: 40px; right: 80px;}
+  .wrap-bg h2{font-size: 32px; top: 40px; right: 80px;}
 
   /*#visual 시작*/
   #visual .left .soup-title,
@@ -183,8 +183,8 @@
   #profile .left .img-box{width: 200px; height: 255px; border-radius: 50% 50% 0 0; overflow: hidden; margin: 0 auto 20px;}
   #profile .left .txt-box{width: 200px;}
   #profile .left .txt-box .name{width: auto;}
-  #profile .left .txt-box .name h2{font-size: 28px;}
-  #profile .left .txt-box .name h2 .korean{font-size: 18px; transform: translate(-10px, 14px);}
+  #profile .left .txt-box .name h3{font-size: 28px;}
+  #profile .left .txt-box .name h3 .korean{font-size: 18px; transform: translate(-10px, 14px);}
   #profile .left .txt-box .birthday{font-size: 20px; margin-bottom: 10px;}
   #profile .left .txt-box .e-mail{font-size: 20px; margin-bottom: 10px;}
   #profile .left .txt-box .phone{font-size: 20px; margin-bottom: 40px;}
@@ -261,7 +261,7 @@
 
   .wrap-bg .horaizontal-line{top: 50px; left: 0;}
   .wrap-bg .vertical-line{top: 0; right: 50px;}
-  .wrap-bg h1{font-size: 44px; top: 50px; right: 100px;}
+  .wrap-bg h2{font-size: 44px; top: 50px; right: 100px;}
 
   /*#visual 시작*/
   #visual{display: flex;  height: 100vh;}
