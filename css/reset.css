@@ -24,6 +24,8 @@ img{vertical-align: top; border: 0;}
 .point_Color_01{color: #fe6c00;}
 .point_Color_02{color: #2f44df;}
 
+.hidden {font-size: 0; color: transparent;}
+
 /*GASP 시작*/
 .parallax__item {
   width: 100%;
@@ -41,7 +43,7 @@ img{vertical-align: top; border: 0;}
 #horizontal {
   display: flex;
   flex-wrap: nowrap;
-  width: 300%;/*100% x 가로화면수*/
+  width: 400%;/*100% x 가로화면수*/
 }
 #horizontal > section {
   width: 100%;
