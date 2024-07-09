@@ -26,6 +26,7 @@
   justify-content: center;
   align-items: flex-end;
   perspective: 500px;
+  
 }
 
 .cover-image {
@@ -52,7 +53,6 @@
   position: absolute;
   transform: translate3d(0%, 100%, 100px);
   z-index: -1;
-  overflow: hidden;
 }
 
 .card:hover .hover-wrap {
@@ -60,7 +60,7 @@
   transform: translate3d(0%, -25%, 100px);
 }
 
-.hover-wrap a{
+.card .hover-wrap a{
   width: 70%;
   height: 80%;
   position: absolute;
@@ -68,6 +68,14 @@
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
+}
+
+.card .hover-wrap a{
+  pointer-events: none;
+}
+
+.card:hover .hover-wrap a{
+  animation: hover-a 0.1s forwards;
 }
 
 .hover-wrap a .img-box{

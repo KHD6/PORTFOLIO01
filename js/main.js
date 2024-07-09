@@ -1,28 +1,28 @@
-$(document).ready(function(){//시작
+$(document).ready(function () {//시작
 
   //GASP 시작
-   const horizontal = document.querySelector("#horizontal");
-   const sections = gsap.utils.toArray("#horizontal > section");
+  const horizontal = document.querySelector("#horizontal");
+  const sections = gsap.utils.toArray("#horizontal > section");
 
-   let scrollTween = gsap.to(sections, {
-       xPercent: -100 * (sections.length -1),
-       ease: "none",
-       scrollTrigger: {
-           trigger: horizontal,
-           start: "top top",
-           end: () => "+=" + (horizontal.offsetWidth - innerWidth),
-           pin: true,
-           ainicipatePin: 1,
-           scrub: 1,
-           invalidateOnRefresh: true
-        }
-    });
-  
+  let scrollTween = gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: horizontal,
+      start: "top top",
+      end: () => "+=" + (horizontal.offsetWidth - innerWidth),
+      pin: true,
+      ainicipatePin: 1,
+      scrub: 1,
+      invalidateOnRefresh: true
+    }
+  });
+
   //GASP 끝
 
   //Visual 동작 시작
 
-/*Main variables*/
+  /*Main variables*/
   var content = [{
     title: [["<span>DESIGN</span><br>"]],
     desc: [["<span>PORTFOLIO</span>"]]
@@ -55,8 +55,8 @@ $(document).ready(function(){//시작
       //if array (grouped text)
       else if (typeof content[i][obj] === "object") {
         var toPush = [];
-        for(var j = 0; j < content[i][obj].length; j++) {
-          for(var k = 0; k < content[i][obj][j].length; k++) {
+        for (var j = 0; j < content[i][obj].length; j++) {
+          for (var k = 0; k < content[i][obj][j].length; k++) {
             toPush.push(content[i][obj][j][k]);
           }
         }
@@ -76,12 +76,12 @@ $(document).ready(function(){//시작
   /*
   * Event handlers
   */
-  $(window).resize(function() {
+  $(window).resize(function () {
     arrangeCurrentPage();
     scrambleOthers();
   });
   $("#soup-prev").hide();
-  $("#soup-prev").click(function() {
+  $("#soup-prev").click(function () {
     $("#soup-next").show();
     currentPage--;
     if (currentPage === 0) {
@@ -90,7 +90,7 @@ $(document).ready(function(){//시작
     arrangeCurrentPage();
     scrambleOthers();
   });
-  $("#soup-next").click(function() {
+  $("#soup-next").click(function () {
     $("#soup-prev").show();
     currentPage++;
     if (currentPage === content.length - 1) {
@@ -170,21 +170,21 @@ $(document).ready(function(){//시작
 
   /*나타내기 시작*/
 
-  if($(window).width() < 1024){
+  if ($(window).width() < 1024) {
     $("#profile .right > ul > li").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
     $("#visual .reverse-bg.right").addClass("parallax__item__desc").addClass("reveal")
     $("#visual .reverse-bg.left").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
-  }else{
+  } else {
     $("#profile .right > ul > li").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_BTT")
     $("#visual .reverse-bg.right").addClass("ani")
     $("#visual .reverse-bg.left").addClass("ani")
   }
-  $(window).resize(function(){
-    if($(window).width() < 1024){
+  $(window).resize(function () {
+    if ($(window).width() < 1024) {
       $("#profile .right > ul > li").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
       $("#visual .reverse-bg.right").addClass("parallax__item__desc").addClass("reveal")
       $("#visual .reverse-bg.left").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_LTR")
-    }else{
+    } else {
       $("#profile .right > ul > li").addClass("parallax__item__desc").addClass("reveal").addClass("reveal_BTT")
       $("#visual .reverse-bg.right").addClass("ani")
       $("#visual .reverse-bg.left").addClass("ani")
@@ -193,44 +193,44 @@ $(document).ready(function(){//시작
 
 
   const hide = (item) => {
-    gsap.set(item, {autoAlpha: 0});
+    gsap.set(item, { autoAlpha: 0 });
   }
 
   const animate = (item) => {
-      let x = 0;
-      let y = 0;
-      let delay = item.dataset.delay;
+    let x = 0;
+    let y = 0;
+    let delay = item.dataset.delay;
 
-      if(item.classList.contains("reveal_LTR")){
-          x = -100,
-          y = 0
-      } else if(item.classList.contains("reveal_BTT")){
-          x = 0,
-          y = 100
-      } else if(item.classList.contains("reveal_TTB")){
-          x = 0,
-          y = -100
-      } else {
-          x = 100,
-          y = 0;
-      }
+    if (item.classList.contains("reveal_LTR")) {
+      x = -100,
+        y = 0
+    } else if (item.classList.contains("reveal_BTT")) {
+      x = 0,
+        y = 100
+    } else if (item.classList.contains("reveal_TTB")) {
+      x = 0,
+        y = -100
+    } else {
+      x = 100,
+        y = 0;
+    }
 
-      gsap.fromTo(item, 
-          {autoAlpha: 0, x: x, y: y}, 
-          {autoAlpha: 1, x: 0, y: 0, delay: 0.25, duration: 2, overwrite: "auto", ease: "expo"}
-      );
+    gsap.fromTo(item,
+      { autoAlpha: 0, x: x, y: y },
+      { autoAlpha: 1, x: 0, y: 0, delay: 0.25, duration: 2, overwrite: "auto", ease: "expo" }
+    );
   };
 
   gsap.utils.toArray(".reveal").forEach(item => {
-      hide(item);
+    hide(item);
 
-      ScrollTrigger.create({
-          trigger: item,
-          start: "top bottom",
-          end: "bottom top",
-          markers: false,
-          onEnter: () => {animate(item)}
-      });
-  });  
+    ScrollTrigger.create({
+      trigger: item,
+      start: "top bottom",
+      end: "bottom top",
+      markers: false,
+      onEnter: () => { animate(item) }
+    });
+  });
   /*나타내기 끝*/
 });//끝

@@ -38,6 +38,19 @@
   }
 }/*hover-wrap img 끝*/
 
+/*hover-wrap a on/off 시작*/
+@keyframes hover-a {
+  0% {
+    pointer-events: none;
+  }
+  99% {
+    pointer-events: none;
+  }
+  100% {
+    pointer-events: all;
+  }
+}/*hover-wrap a on/off 끝*/
+
 /*end .swing 애니메이션 시작*/
 @keyframes swing {
   0%{transform: rotate(0);}
