@@ -28,6 +28,16 @@
   }
 }/*btn 애니메이션 끝*/
 
+/*hover-wrap img 시작*/
+@keyframes hover-img {
+  0% {
+    background-position: center 0%;
+  }
+  100% {
+    background-position: center 100%;
+  }
+}/*hover-wrap img 끝*/
+
 /*end .swing 애니메이션 시작*/
 @keyframes swing {
   0%{transform: rotate(0);}

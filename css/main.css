@@ -524,18 +524,36 @@
   font-size: 22px;
 }
 
-.design .right .mockup-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .design .konec .left .con-box ul.contri-box li:nth-child(5) {
   background-color: #ddd;
 }
 
+.design .konec .right .mockup-box .hover-wrap a .img-box,
+.design .konec .right .mockup-box .hover-wrap a .img-box:hover{
+  animation: hover-img 5s linear infinite alternate;
+  background-image: url(../img/konec-pop.jpg);
+}
+
 .design .andersen .left .con-box ul.contri-box li:nth-child(5) {
   background-color: #ddd;
+}
+
+.design .andersen .right .mockup-box .hover-wrap a .img-box,
+.design .andersen .right .mockup-box .hover-wrap a .img-box:hover{
+  animation: hover-img 30s linear infinite alternate;
+  background-image: url(../img/andersen-pop.png);
+}
+
+.design .recipe .right .mockup-box .hover-wrap a .img-box,
+.design .recipe .right .mockup-box .hover-wrap a .img-box:hover{
+  animation: hover-img 30s linear infinite alternate;
+  background-image: url(../img/andersen-pop.png);
+}
+
+.design .marienzoo .right .mockup-box .hover-wrap a .img-box,
+.design .marienzoo .right .mockup-box .hover-wrap a .img-box:hover{
+  animation: hover-img 30s linear infinite alternate;
+  background-image: url(../img/andersen-pop.png);
 }
 
 /*design 끝*/
@@ -1169,6 +1187,13 @@
 
   .design .right {
     width: 60%;
+  }
+
+  .design .konec .right .mockup-box .hover-wrap a .img-box,
+  .design .andersen .right .mockup-box .hover-wrap a .img-box,
+  .design .recipe .right .mockup-box .hover-wrap a .img-box,
+  .design .marienzoo .right .mockup-box .hover-wrap a .img-box{
+    animation: none;
   }
 
   
