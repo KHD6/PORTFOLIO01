@@ -530,7 +530,7 @@
 
 .design .konec .right .mockup-box .hover-wrap a .img-box,
 .design .konec .right .mockup-box .hover-wrap a .img-box:hover{
-  animation: hover-img 5s linear infinite alternate;
+  animation: hover-img 5s ease-in-out infinite alternate;
   background-image: url(../img/konec-pop.jpg);
 }
 
@@ -540,20 +540,20 @@
 
 .design .andersen .right .mockup-box .hover-wrap a .img-box,
 .design .andersen .right .mockup-box .hover-wrap a .img-box:hover{
-  animation: hover-img 30s linear infinite alternate;
+  animation: hover-img 7s ease-in-out infinite alternate;
   background-image: url(../img/andersen-pop.png);
 }
 
 .design .recipe .right .mockup-box .hover-wrap a .img-box,
 .design .recipe .right .mockup-box .hover-wrap a .img-box:hover{
-  animation: hover-img 30s linear infinite alternate;
-  background-image: url(../img/andersen-pop.png);
+  animation: hover-img 5s ease-in-out infinite alternate;
+  background-image: url(../img/10000recipe-pop.jpg);
 }
 
 .design .marienzoo .right .mockup-box .hover-wrap a .img-box,
 .design .marienzoo .right .mockup-box .hover-wrap a .img-box:hover{
-  animation: hover-img 30s linear infinite alternate;
-  background-image: url(../img/andersen-pop.png);
+  animation: hover-img 5s ease-in-out infinite alternate;
+  background-image: url(../img/marienzoo-pop.jpg);
 }
 
 /*design 끝*/
