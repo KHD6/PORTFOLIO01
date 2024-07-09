@@ -51,22 +51,22 @@
   background-size: cover;
 }
 
-.konec .wrap-bg .con-bg{
+.konec .wrap-bg .con-bg {
   background-image: url(../img/konec-bg.jpg);
   background-position: center;
 }
 
-.andersen .wrap-bg .con-bg{
+.andersen .wrap-bg .con-bg {
   background-image: url(../img/andersen-bg.jpg);
   background-position: center;
 }
 
-.recipe .wrap-bg .con-bg{
+.recipe .wrap-bg .con-bg {
   background-image: url(../img/10000recipe-bg.jpg);
   background-position: center;
 }
 
-.marienzoo .wrap-bg .con-bg{
+.marienzoo .wrap-bg .con-bg {
   background-image: url(../img/marienzoo-bg.jpg);
   background-position: center;
 }
@@ -522,6 +522,25 @@
 .design .left .con-box .btn-box a {
   border-radius: 100px 0 100px 0;
   font-size: 22px;
+  position: relative;
+}
+
+.design .left .con-box .btn-box a:hover .btn-txt.before,
+.design .left .con-box .btn-box a:hover .btn-txt.before strong {
+  color: transparent;
+}
+
+.design .left .con-box .btn-box a .btn-txt.after {
+  display: block;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.8s;
+}
+
+.design .left .con-box .btn-box a:hover .btn-txt.after {
+  top: 50%;
 }
 
 .design .konec .left .con-box ul.contri-box li:nth-child(5) {
@@ -529,8 +548,8 @@
 }
 
 .design .konec .right .mockup-box .hover-wrap a .img-box,
-.design .konec .right .mockup-box .hover-wrap a .img-box:hover{
-  animation: hover-img 5s ease-in-out infinite alternate;
+.design .konec .right .mockup-box .hover-wrap a .img-box:hover {
+  animation: hover-img 7s ease-in-out infinite alternate;
   background-image: url(../img/konec-pop.jpg);
 }
 
@@ -539,19 +558,19 @@
 }
 
 .design .andersen .right .mockup-box .hover-wrap a .img-box,
-.design .andersen .right .mockup-box .hover-wrap a .img-box:hover{
+.design .andersen .right .mockup-box .hover-wrap a .img-box:hover {
   animation: hover-img 7s ease-in-out infinite alternate;
   background-image: url(../img/andersen-pop.png);
 }
 
 .design .recipe .right .mockup-box .hover-wrap a .img-box,
-.design .recipe .right .mockup-box .hover-wrap a .img-box:hover{
+.design .recipe .right .mockup-box .hover-wrap a .img-box:hover {
   animation: hover-img 5s ease-in-out infinite alternate;
   background-image: url(../img/10000recipe-pop.jpg);
 }
 
 .design .marienzoo .right .mockup-box .hover-wrap a .img-box,
-.design .marienzoo .right .mockup-box .hover-wrap a .img-box:hover{
+.design .marienzoo .right .mockup-box .hover-wrap a .img-box:hover {
   animation: hover-img 5s ease-in-out infinite alternate;
   background-image: url(../img/marienzoo-pop.jpg);
 }
@@ -635,7 +654,17 @@
 
 /*end 끝*/
 
+/*profile-bg 시작*/
+.back-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
 
+/*profile-bg 끝*/
 
 
 
@@ -1192,11 +1221,11 @@
   .design .konec .right .mockup-box .hover-wrap a .img-box,
   .design .andersen .right .mockup-box .hover-wrap a .img-box,
   .design .recipe .right .mockup-box .hover-wrap a .img-box,
-  .design .marienzoo .right .mockup-box .hover-wrap a .img-box{
+  .design .marienzoo .right .mockup-box .hover-wrap a .img-box {
     animation: none;
   }
 
-  
+
 
   /*design 끝*/
 

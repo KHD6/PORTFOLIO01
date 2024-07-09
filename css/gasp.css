@@ -21,3 +21,8 @@
 #horizontal > section {
   width: 100%;
 }
+
+#visual,
+#horizontal{
+  background-color: #000;
+}

@@ -13,7 +13,7 @@
 }
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
-body{font-size: 25px; font-family: 'NanumSquare', sans-serif; background-color: #000; color: #fff; min-width: 340px; font-weight: no;}
+body{font-size: 25px; font-family: 'NanumSquare', sans-serif; color: #fff; min-width: 340px; font-weight: no;}
 a{text-decoration: none; color: inherit;}
 ul, ol{list-style: none;}
 img{vertical-align: top; border: 0; max-width: 100%;}
