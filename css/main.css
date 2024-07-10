@@ -1218,13 +1218,6 @@
     width: 60%;
   }
 
-  .design .konec .right .mockup-box .hover-wrap a .img-box,
-  .design .andersen .right .mockup-box .hover-wrap a .img-box,
-  .design .recipe .right .mockup-box .hover-wrap a .img-box,
-  .design .marienzoo .right .mockup-box .hover-wrap a .img-box {
-    animation: none;
-  }
-
 
 
   /*design 끝*/
@@ -1324,6 +1317,12 @@
 
 
   /*design 시작*/
+  .design .konec .right .mockup-box .hover-wrap a .img-box,
+  .design .andersen .right .mockup-box .hover-wrap a .img-box,
+  .design .recipe .right .mockup-box .hover-wrap a .img-box,
+  .design .marienzoo .right .mockup-box .hover-wrap a .img-box {
+    animation: none;
+  }
   /*design 끝*/
 
 
