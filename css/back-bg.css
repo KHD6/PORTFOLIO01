@@ -235,7 +235,7 @@
   }
   100% {
     box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
-    transform:rotate(-1260);
+    transform:rotate(-1260deg);
   }
 }
 
