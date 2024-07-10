@@ -575,6 +575,22 @@
   background-image: url(../img/marienzoo-pop.jpg);
 }
 
+.design .right .mockup-box .hover-wrap p{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-wrap: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.design .right .mockup-box:hover .hover-wrap p{
+  top: -15%;
+  opacity: 1;
+}
+
 /*design 끝*/
 
 
@@ -935,6 +951,15 @@
     height: auto;
   }
 
+  .design .right .mockup-box .hover-wrap p{
+    top: 12%;
+    font-size: 18px;
+  }
+  
+  .design .right .mockup-box:hover .hover-wrap p{
+    top: -12%;
+  }
+
   /*design 끝*/
 
 
@@ -1218,6 +1243,15 @@
     width: 60%;
   }
 
+  .design .right .mockup-box .hover-wrap p{
+    top: 12%;
+    font-size: 16px;
+  }
+  
+  .design .right .mockup-box:hover .hover-wrap p{
+    top: -12%;
+  }
+
 
 
   /*design 끝*/
@@ -1322,6 +1356,15 @@
   .design .recipe .right .mockup-box .hover-wrap a .img-box,
   .design .marienzoo .right .mockup-box .hover-wrap a .img-box {
     animation: none;
+  }
+
+  .design .right .mockup-box .hover-wrap p{
+    top: 12%;
+    font-size: 20px;
+  }
+  
+  .design .right .mockup-box:hover .hover-wrap p{
+    top: -12%;
   }
   /*design 끝*/
 
