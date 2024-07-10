@@ -1,11 +1,21 @@
 @charset "utf-8";
 
 .noite {
-  background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
+  background: #000;
   width: 100%;
   height: 100%;
   position: absolute;
   overflow: hidden;
+}
+
+.sunset {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgb(0, 0, 0) 60%, rgb(0, 33, 167)85%, rgb(201, 41, 181));
+  animation: sunset 20s infinite linear alternate;
 }
 
 .constelacao {
@@ -71,10 +81,20 @@
 .meteoro.style3 { animation-name: meteoroStyle3; }
 .meteoro.style4 { animation-name: meteoroStyle4; }
 
+.rotate-box {
+  width: 50vh;
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(25%, 25%);
+  animation: rotate-lua 60s linear infinite;
+}
+
 .lua {
   position: absolute;
-  right: 10%;
-  bottom: 10%;
+  left: 0;
+  bottom: 0;
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -83,31 +103,17 @@
   animation-name: lua;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 10s;
+  animation-duration: 60s;
   display: none;
 }
 
 @media screen and (min-width: 768px) {
   .lua {
     display: block;
-    bottom: 15%;
   }
 }
-
-@media screen and (min-width: 1024px) {
-  .lua {
-    bottom: 20%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .lua {
-    bottom: 25%;
-  }
-}
-
 .lua .textura {
-  background-image: url(https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgMoon.png);
+  background-image: url(../img/bg-moon.png);
   background-position: center;
   background-size: 100%;
   width: 100%;
@@ -200,13 +206,36 @@
 
 @keyframes lua {
   0%{
+    box-shadow: 0 0 40px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    transform: rotate(0deg);
+  }
+  25% {
     box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    transform: rotate(-200deg);
+  }
+  26% {
+    box-shadow: 0 0 40px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    transform: rotate(-360deg);
   }
   50% {
-    box-shadow: 0 0 80px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    transform: rotate(-560deg);
+  }
+  51% {
+    box-shadow: 0 0 40px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    transform:rotate(-720deg);
+  }
+  75% {
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    transform:rotate(-920deg);
+  }
+  76% {
+    box-shadow: 0 0 40px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    transform:rotate(-1080deg);
   }
   100% {
     box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    transform:rotate(-1280);
   }
 }
 
@@ -216,5 +245,53 @@
   }
   100% {
     -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-lua {
+  0% {
+    transform: translate(25%, 25%) rotate(0deg);
+  }
+  25% {
+    transform: translate(25%, 25%) rotate(180deg);
+  }
+  26% {
+    transform: translate(25%, 25%) rotate(360deg);
+  }
+  50% {
+    transform: translate(25%, 25%) rotate(540deg);
+  }
+  51% {
+    transform: translate(25%, 25%) rotate(720deg);
+  }
+  75% {
+    transform: translate(25%, 25%) rotate(900deg);
+  }
+  76% {
+    transform: translate(25%, 25%) rotate(1080deg);
+  }
+  100% {
+    transform: translate(25%, 25%) rotate(1260deg);
+  }
+}
+
+@keyframes sunset {
+  0% {
+    bottom: 0;
+  }
+  10% {
+    bottom: 0;
+  }
+  40% {
+    bottom: -50%;
+  }
+  60% {
+    bottom: -50%;
+  }
+  90% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 0;
   }
 }
