@@ -211,7 +211,7 @@
   }
   25% {
     box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
-    transform: rotate(-200deg);
+    transform: rotate(-180deg);
   }
   26% {
     box-shadow: 0 0 40px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
@@ -219,7 +219,7 @@
   }
   50% {
     box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
-    transform: rotate(-560deg);
+    transform: rotate(-540deg);
   }
   51% {
     box-shadow: 0 0 40px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
@@ -227,7 +227,7 @@
   }
   75% {
     box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
-    transform:rotate(-920deg);
+    transform:rotate(-900deg);
   }
   76% {
     box-shadow: 0 0 40px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
@@ -235,7 +235,7 @@
   }
   100% {
     box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
-    transform:rotate(-1280);
+    transform:rotate(-1260);
   }
 }
 
