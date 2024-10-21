@@ -1,0 +1,1355 @@
+@charset "utf-8";
+
+/*모바일 시작*/
+
+.wrap-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wrap-bg .horaizontal-line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.wrap-bg .vertical-line {
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.wrap-bg h2 {
+  font-size: 20px;
+  font-family: 'OKGUNG';
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  transform: translateY(-50%);
+  background-color: #000;
+  padding: 0 20px;
+}
+
+.wrap-bg .con-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.konec .wrap-bg .con-bg {
+  background-image: url(../img/konec-bg.jpg);
+  background-position: center;
+}
+
+.andersen .wrap-bg .con-bg {
+  background-image: url(../img/andersen-bg.jpg);
+  background-position: center;
+}
+
+.recipe .wrap-bg .con-bg {
+  background-image: url(../img/10000recipe-bg.jpg);
+  background-position: center;
+}
+
+.marienzoo .wrap-bg .con-bg {
+  background-image: url(../img/marienzoo-bg.jpg);
+  background-position: center;
+}
+
+/*#visual 시작*/
+#visual {
+  display: block;
+  height: auto;
+}
+
+#visual>div {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#visual .left .soup-title,
+#visual .left .soup-desc {
+  font-size: 35px;
+}
+
+#visual .left #soup-nav {
+  display: flex;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+}
+
+#visual .left #soup-nav #soup-prev {
+  display: block;
+  width: 33px;
+  height: 33px;
+  background: url(../img/soup-prev.png) no-repeat center / cover;
+  color: transparent;
+  font-size: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#visual .left #soup-nav #soup-prev::before {
+  content: "";
+  display: block;
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  bottom: -3vh;
+  right: 50%;
+}
+
+#visual .left #soup-nav #soup-prev:hover {
+  transform: scale(1.2);
+}
+
+#visual .left #soup-nav #soup-next {
+  display: block;
+  width: 33px;
+  height: 33px;
+  background: url(../img/soup-next.png) no-repeat center / cover;
+  color: transparent;
+  font-size: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#visual .left #soup-nav #soup-next::before {
+  content: "";
+  display: block;
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  bottom: -3vh;
+  left: 50%;
+}
+
+#visual .left #soup-nav #soup-next:hover {
+  transform: scale(1.2);
+}
+
+#visual .right {
+  background-color: #fff;
+  color: #000;
+  height: 60vh;
+  position: relative;
+}
+
+#visual .right .inner {
+  width: calc(100% - 40px);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#visual .right .txt-box {
+  padding-left: 10px;
+}
+
+#visual .right .txt-box>div {
+  font-size: 40px;
+  font-family: 'RixInooAriDuriR';
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+#visual .right .txt-box div p.reverse {
+  color: #fff;
+  position: relative;
+}
+
+#visual .right .txt-box div p.reverse .reverse-bg {
+  display: block;
+  width: 110%;
+  height: 120%;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#visual .right .txt-box .turn {
+  animation: turn 3s infinite linear;
+}
+
+#visual .right .name {
+  border-top: 2px solid #000;
+  padding-top: 10px;
+}
+
+#visual .right .name h1 {
+  text-align: right;
+  font-family: 'RixInooAriDuriR';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/*#visual 끝*/
+
+
+
+
+
+/*profile 시작*/
+#profile.parallax__item {
+  height: auto;
+  padding: 80px 40px 20px 20px;
+  display: block;
+}
+
+#profile .left .img-box {
+  width: 230px;
+  height: 300px;
+  border-radius: 50% 50% 0 0;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+#profile .left .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#profile .left .txt-box {
+  width: 230px;
+  font-family: 'NanumSquare';
+  margin: 0 auto;
+}
+
+#profile .left .txt-box .name {
+  margin: 0 auto 20px;
+  width: 215px;
+}
+
+#profile .left .txt-box .name h3 {
+  font-size: 30px;
+  font-family: 'OKGUNG';
+  letter-spacing: 2px;
+}
+
+#profile .left .txt-box .name h3 div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+#profile .left .txt-box .name h3 .korean {
+  font-size: 20px;
+  font-weight: 400;
+  transform: translate(-10px, 18px);
+  font-family: 'NanumSquare';
+}
+
+#profile .left .txt-box .flex-wrap {
+  margin: 0 auto;
+}
+
+#profile .left .txt-box .birthday {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+#profile .left .txt-box .e-mail {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+#profile .left .txt-box .phone {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+#profile .left .key-box {
+  width: 230px;
+  height: 260px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 15px 0;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#profile .left .key-box h3 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: normal;
+}
+
+#profile .left .key-box ul {
+  position: relative;
+  width: 100%;
+}
+
+#profile .left .key-box ul li {
+  font-size: 20px;
+  position: absolute;
+}
+
+#profile .left .key-box ul li:nth-child(1) {
+  top: 20px;
+  left: 30%;
+}
+
+#profile .left .key-box ul li:nth-child(2) {
+  top: 50px;
+  left: 50%;
+}
+
+#profile .left .key-box ul li:nth-child(3) {
+  top: 80px;
+  left: 10%;
+}
+
+#profile .left .key-box ul li:nth-child(4) {
+  top: 110px;
+  left: 40%;
+}
+
+#profile .left .key-box ul li:nth-child(5) {
+  top: 140px;
+  left: 20%;
+}
+
+#profile .left .key-box ul li:nth-child(6) {
+  top: 170px;
+  left: 60%;
+}
+
+
+#profile .right>ul>li {
+  border-left: 2px solid #fff;
+  margin-bottom: 50px;
+  padding-left: 5px;
+}
+
+#profile .right>ul>li:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+#profile .right>ul>li h3 {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+#profile .right>ul>li ul {
+  padding-left: 20px;
+}
+
+#profile .right>ul>li ul li {
+  margin-bottom: 10px;
+}
+
+#profile .right .year {
+  font-size: 25px;
+  margin-bottom: 2px;
+  font-family: 'OKGUNG';
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+#profile .right .year .until {
+  display: block;
+  padding-left: 19px;
+}
+
+#profile .right .cont {
+  font-size: 20px;
+}
+
+#profile .right .skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+#profile .right .skills ul li {
+  width: 50%;
+  min-width: 60px;
+  margin-bottom: 25px;
+}
+
+#profile .right .skills ul li::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  margin: 0 auto;
+  margin: 0 auto 10px;
+}
+
+#profile .right .skills ul li:nth-child(1)::before {
+  background-image: url(../img/percent_90.png);
+}
+
+#profile .right .skills ul li:nth-child(2)::before {
+  background-image: url(../img/percent_80.png);
+}
+
+#profile .right .skills ul li:nth-child(3)::before {
+  background-image: url(../img/percent_60.png);
+}
+
+#profile .right .skills ul li:nth-child(4)::before {
+  background-image: url(../img/percent_70.png);
+}
+
+#profile .right .skills ul li:nth-child(5)::before {
+  background-image: url(../img/percent_60.png);
+}
+
+#profile .right .skills ul li:nth-child(6)::before {
+  background-image: url(../img/percent_60.png);
+}
+
+#profile .right .skills ul li .cont {
+  text-align: center;
+}
+
+/*profile 끝*/
+
+
+
+
+
+/*design 시작*/
+.design>section {
+  display: block;
+  padding: 80px 40px 20px 20px
+}
+
+.design .left {
+  position: relative;
+  z-index: 5;
+}
+
+.design .left .title-box {
+  width: 250px;
+  margin: 0 auto 20px;
+  font-size: 22px;
+}
+
+.design .left .title-box h4 {
+  font-size: 25px;
+  font-family: 'OKGUNG';
+  font-weight: normal;
+}
+
+.design .left .title-box h4 {
+  margin-bottom: 3px;
+}
+
+.design .left .title-box h3 img {
+  width: 100%;
+}
+
+.design .left .title-box p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.design .left .con-box {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.design .left .con-box .contri {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.design .left .con-box .contri p {
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.design .left .con-box .contri ul.contri-box {
+  width: 155px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.design .left .con-box .contri ul.contri-box li {
+  font-size: 0;
+  color: transparent;
+  width: 25px;
+  height: 25px;
+  background-color: #2f44df;
+  border-radius: 5px;
+}
+
+.design .left .con-box .txt-box {
+  display: none;
+}
+
+.design .left .con-box .btn-box {
+  height: 170px;
+}
+
+.design .left .con-box .btn-box a {
+  border-radius: 100px 0 100px 0;
+  font-size: 22px;
+  position: relative;
+}
+
+.design .left .con-box .btn-box a:hover .btn-txt.before,
+.design .left .con-box .btn-box a:hover .btn-txt.before strong {
+  color: transparent;
+}
+
+.design .left .con-box .btn-box a .btn-txt.after {
+  display: block;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.8s;
+}
+
+.design .left .con-box .btn-box a:hover .btn-txt.after {
+  top: 50%;
+}
+
+.design .konec .left .con-box ul.contri-box li:nth-child(5) {
+  background-color: #ddd;
+}
+
+.design .konec .right .mockup-box .hover-wrap a .img-box,
+.design .konec .right .mockup-box .hover-wrap a .img-box:hover {
+  animation: hover-img 7s ease-in-out infinite alternate;
+  background-image: url(../img/konec-pop.jpg);
+}
+
+.design .andersen .left .con-box ul.contri-box li:nth-child(5) {
+  background-color: #ddd;
+}
+
+.design .andersen .right .mockup-box .hover-wrap a .img-box,
+.design .andersen .right .mockup-box .hover-wrap a .img-box:hover {
+  animation: hover-img 7s ease-in-out infinite alternate;
+  background-image: url(../img/andersen-pop.png);
+}
+
+.design .recipe .right .mockup-box .hover-wrap a .img-box,
+.design .recipe .right .mockup-box .hover-wrap a .img-box:hover {
+  animation: hover-img 5s ease-in-out infinite alternate;
+  background-image: url(../img/10000recipe-pop.jpg);
+}
+
+.design .marienzoo .right .mockup-box .hover-wrap a .img-box,
+.design .marienzoo .right .mockup-box .hover-wrap a .img-box:hover {
+  animation: hover-img 5s ease-in-out infinite alternate;
+  background-image: url(../img/marienzoo-pop.jpg);
+}
+
+/*design 끝*/
+
+
+
+
+
+/*end 시작*/
+#end.parallax__item {
+  padding: 80px 40px 20px 20px;
+  display: block;
+}
+
+#end .txt-wrap {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 10px);
+  transform: translate(-50%, -50%);
+  width: calc(100vw - 60px);
+}
+
+#end .txt-box01 {
+  margin: 0 auto 80px;
+  width: 260px;
+}
+
+#end .txt-box01 p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  font-family: 'RixInooAriDuriR';
+  margin-bottom: 40px;
+}
+
+#end .txt-box01 p .reverse {
+  color: #000;
+  position: relative;
+}
+
+#end .txt-box01 p .reverse::after {
+  content: "";
+  display: block;
+  width: 110%;
+  height: 120%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#end .txt-box01 .swing {
+  transform-origin: center bottom;
+  transform: rotate(45deg);
+  animation: swing 1.5s infinite linear;
+}
+
+#end .txt-box02 {
+  width: 260px;
+  margin: 0 auto;
+}
+
+#end .txt-box02 li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#end .txt-box02 p {
+  font-size: 16px;
+}
+
+#end .txt-box02 p:first-child {
+  padding-right: 5px;
+  border-right: 2px solid #fff;
+}
+
+/*end 끝*/
+
+/*profile-bg 시작*/
+.back-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+/*profile-bg 끝*/
+
+
+
+/*모바일 끝*/
+
+
+
+
+
+
+
+
+
+
+/*태블릿 시작*/
+@media screen and (min-width: 768px) {
+
+  .wrap-bg .horaizontal-line {
+    top: 40px;
+    left: 0;
+  }
+
+  .wrap-bg .vertical-line {
+    top: 0;
+    right: 40px;
+  }
+
+  .wrap-bg h2 {
+    font-size: 32px;
+    top: 40px;
+    right: 80px;
+  }
+
+  /*#visual 시작*/
+  #visual .left .soup-title,
+  #visual .left .soup-desc {
+    font-size: 60px;
+  }
+
+  #visual .left #soup-nav #soup-prev,
+  #visual .left #soup-nav #soup-next {
+    width: 44px;
+    height: 44px;
+  }
+
+  #visual .right {
+    height: 100vh;
+  }
+
+  #visual .right .inner {
+    width: calc(100% - 60px);
+  }
+
+  #visual .right .txt-box {
+    padding-left: 40px;
+  }
+
+  #visual .right .txt-box p {
+    font-size: 60px;
+  }
+
+  #visual .right .name {
+    border-top: 2px solid #000;
+    padding-top: 15px;
+  }
+
+  #visual .right .name h1 {
+    font-size: 24px;
+  }
+
+  /*#visual 끝*/
+
+
+
+
+
+  /*profile 시작*/
+  #profile.parallax__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 80px 40px 40px;
+    align-items: baseline;
+  }
+
+  #profile .left {
+    width: 200px;
+  }
+
+  #profile .left .img-box {
+    width: 200px;
+    height: 255px;
+    border-radius: 50% 50% 0 0;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+
+  #profile .left .txt-box {
+    width: 200px;
+  }
+
+  #profile .left .txt-box .name {
+    width: auto;
+  }
+
+  #profile .left .txt-box .name h3 {
+    font-size: 28px;
+  }
+
+  #profile .left .txt-box .name h3 .korean {
+    font-size: 18px;
+    transform: translate(-10px, 14px);
+  }
+
+  #profile .left .txt-box .birthday {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  #profile .left .txt-box .e-mail {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  #profile .left .txt-box .phone {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  #profile .left .key-box {
+    width: 200px;
+    height: 260px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 15px 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  #profile .left .key-box h3 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  #profile .left .key-box ul {
+    position: relative;
+    width: 100%;
+  }
+
+  #profile .left .key-box ul li {
+    font-size: 18px;
+    position: absolute;
+  }
+
+  #profile .right {
+    width: calc(100% - 240px);
+  }
+
+  #profile .right>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #profile .right>ul li {
+    margin-right: 30px;
+  }
+
+  #profile .right>ul>li h3 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  #profile .right>ul>li ul {
+    padding-left: 25px;
+  }
+
+  #profile .right>ul>li ul li {
+    margin-bottom: 12px;
+  }
+
+  #profile .right .year {
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+
+  #profile .right .year .until {
+    display: block;
+    padding-left: 18px;
+  }
+
+  #profile .right .cont {
+    font-size: 20px;
+  }
+
+  #profile .right .skills ul li {
+    width: 25%;
+  }
+
+  #profile .right .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #profile .right .skills ul li::before {
+    margin: 0 auto 10px;
+  }
+
+  #profile .right .skills ul li .cont {
+    text-align: center;
+  }
+
+  /*profile 끝*/
+
+
+
+
+
+  /*design 시작*/
+
+  .design>section {
+    display: block;
+    padding: 100px 80px 40px 40px
+  }
+
+  .design .left {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .design .left .title-box {
+    margin: 0 auto;
+  }
+
+  .design .left .con-box {
+    width: calc(100% - 290px);
+    margin: 0 auto;
+  }
+
+  .design .left .con-box .contri {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+  }
+
+  .design .left .con-box .txt-box {
+    display: block;
+    border-left: 2px solid #FFF;
+    padding-left: 5px;
+    margin-bottom: 20px;
+  }
+
+  .design .left .con-box .txt-box p {
+    font-size: 16px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+  }
+
+  .design .left .con-box .txt-box p.del {
+    display: none;
+  }
+
+  .design .left .con-box .btn-box {
+    display: flex;
+    width: 400px;
+    height: auto;
+  }
+
+  /*design 끝*/
+
+
+
+
+
+  /*end 시작*/
+  #end.parallax__item {
+    padding: 100px 80px 40px 40px;
+  }
+
+  #end .txt-wrap {
+    width: calc(100vw - 220px);
+    left: calc(50% - 20px);
+  }
+
+  #end .txt-box01 {
+    margin: 40px auto 100px;
+    width: 500px;
+  }
+
+  #end .txt-box01 p {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+
+
+  #end .txt-box02 li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  #end .txt-box02 p {
+    font-size: 18px;
+  }
+
+  /*end 끝*/
+
+
+
+}
+
+/*태블릿 끝*/
+
+
+
+
+
+
+
+
+
+/*1024~ 시작*/
+@media screen and (min-width: 1024px) {
+
+  .wrap-bg .horaizontal-line {
+    top: 50px;
+    left: 0;
+  }
+
+  .wrap-bg .vertical-line {
+    top: 0;
+    right: 50px;
+  }
+
+  .wrap-bg h2 {
+    font-size: 44px;
+    top: 50px;
+    right: 100px;
+  }
+
+  /*#visual 시작*/
+  #visual {
+    display: flex;
+    height: 100vh;
+  }
+
+  #visual {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #visual>div {
+    width: 50vw;
+    height: 100vh;
+  }
+
+  #visual .left .soup-title,
+  #visual .left .soup-desc {
+    font-size: 60px;
+  }
+
+  #visual .left #soup-nav #soup-prev,
+  #visual .left #soup-nav #soup-next {
+    width: 55px;
+    height: 55px;
+  }
+
+  #visual .left #soup-nav #soup-prev::before {
+    width: 25vw;
+    height: 100vh;
+    bottom: -3vh;
+    right: 50%;
+  }
+
+  #visual .left #soup-nav #soup-next::before {
+    width: 25vw;
+    height: 100vh;
+    bottom: -3vh;
+    left: 50%;
+  }
+
+
+  #visual .right .txt-box p {
+    font-size: 60px;
+  }
+
+  #visual .right .txt-box div p.reverse .reverse-bg.right.ani {
+    animation: rebgR 2s 1.1s backwards;
+  }
+
+  #visual .right .txt-box div p.reverse .reverse-bg.left.ani {
+    animation: rebgL 2s 1.85s backwards;
+  }
+
+  /*#visual 끝*/
+
+
+
+
+
+  /*profile 시작*/
+  #profile.parallax__item {
+    padding: 150px 100px 50px 50px;
+  }
+
+  #profile .left {
+    width: 200px;
+  }
+
+  #profile .left .img-box {
+    width: 200px;
+    height: 255px;
+    border-radius: 50% 50% 0 0;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+
+  #profile .left .txt-box .birthday {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  #profile .left .txt-box .e-mail {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  #profile .left .txt-box .phone {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  #profile .right>ul>li {
+    margin-bottom: 30px;
+    padding-left: 10px;
+  }
+
+  #profile .right {
+    width: calc(100% - 240px);
+  }
+
+  #profile .right>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #profile .right>ul li {
+    width: 50%;
+    ;
+    margin-right: 0px;
+  }
+
+  #profile .right>ul>li:last-child {
+    margin-right: 0;
+  }
+
+  #profile .right .cont {
+    text-wrap: nowrap;
+  }
+
+  #profile .right .skills {
+    width: 100%;
+    max-width: 750px;
+  }
+
+  #profile .right .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #profile .right .skills ul li {
+    width: 15%;
+  }
+
+  /*profile 끝*/
+
+
+
+
+
+  /*design 시작*/
+  .design>section {
+    display: flex;
+    padding: 150px 100px 50px 50px;
+    justify-content: space-between;
+  }
+
+  .design .left {
+    display: block;
+    margin: 0px;
+    width: 40%;
+  }
+
+
+  .design .left .title-box {
+    width: 70%;
+    margin: 0 0 30px;
+    font-size: 22px;
+  }
+
+  .design .left .title-box h3 {
+    font-size: 35px;
+  }
+
+  .design .left .title-box p {
+    font-size: 17px;
+  }
+
+
+
+  .design .left .con-box {
+    width: 100%;
+    margin: 0;
+  }
+
+  .design .left .con-box .contri {
+    margin-bottom: 25px;
+  }
+
+  .design .left .con-box .contri p {
+    margin-right: 20px;
+    font-size: 25px;
+  }
+
+  .design .left .con-box .contri ul.contri-box {
+    width: 200px;
+  }
+
+  .design .left .con-box .contri ul.contri-box li {
+    width: 30px;
+    height: 30px;
+  }
+
+  .design .left .con-box .txt-box {
+    max-width: 500px;
+  }
+
+  .design .left .con-box .txt-box p {
+    font-size: 18px;
+  }
+
+  .design .left .con-box .txt-box p.del {
+    display: block;
+  }
+
+  .design .right {
+    width: 60%;
+  }
+
+
+
+  /*design 끝*/
+
+
+
+
+
+  /*end 시작*/
+  #end.parallax__item {
+    padding: 150px 100px 50px 50px;
+  }
+
+  #end .txt-wrap {
+    width: calc(100vw - 150px);
+    left: calc(50% - 25px);
+  }
+
+  #end .txt-box01 {
+    margin: 40px auto 100px;
+    width: 500px;
+  }
+
+  #end .txt-box01 p {
+    margin-bottom: 60px;
+  }
+
+  #end .txt-box02 {
+    width: 400px;
+  }
+
+  #end .txt-box02 li {
+    margin-bottom: 20px;
+  }
+
+  #end .txt-box02 p {
+    font-size: 20px;
+  }
+
+  /*end 끝*/
+
+
+
+
+
+
+}
+
+/*1024~ 끝*/
+
+
+
+
+
+/*1440~ 시작*/
+@media screen and (min-width: 1440px) {
+
+  /*#visual 시작*/
+  #visual .right .txt-box p {
+    font-size: 90px;
+  }
+
+  /*#visual 끝*/
+
+
+
+
+
+  /*profile 시작*/
+  #profile .left {
+    width: 300px;
+  }
+
+  #profile .right {
+    width: calc(100% - 340px);
+  }
+
+  #profile .right>ul>li h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  #profile .right .year {
+    font-size: 28px;
+    margin-bottom: 2px;
+  }
+
+  #profile .right .cont {
+    font-size: 22px;
+  }
+
+
+  /*profile 끝*/
+
+
+
+
+
+  /*design 시작*/
+  .design .konec .right .mockup-box .hover-wrap a .img-box,
+  .design .andersen .right .mockup-box .hover-wrap a .img-box,
+  .design .recipe .right .mockup-box .hover-wrap a .img-box,
+  .design .marienzoo .right .mockup-box .hover-wrap a .img-box {
+    animation: none;
+  }
+  /*design 끝*/
+
+
+
+
+
+  /*end 시작*/
+
+  #end .txt-box01 {
+    width: 660px;
+  }
+
+  #end .txt-box01 p {
+    font-size: 80px;
+  }
+
+  #end .txt-box02 p {
+    font-size: 25px;
+  }
+
+  /*end 끝*/
+
+
+
+
+
+
+}
+
+/*1440~ 끝*/

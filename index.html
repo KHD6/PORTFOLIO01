@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김홍덕 포트폴리오</title>
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/import.css">
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script><!--.GASP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script><!--.GASP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script><!--.GASP-->
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <section id="wrap">
+    <div id="parallax__cont">
+      <section id="visual" class="parallax__item ">
+
+        <div class="left">
+          <div id="soup-container">
+            <div id="segments">
+            </div>
+            <div id="soup-nav">
+              <span id="soup-prev">앞</span>
+              <span id="soup-next">뒤</span>
+            </div>
+          </div>
+        </div><!--.left-->
+
+        <div class="right">
+          <div class="inner">
+            <div class="txt-box">
+              <div>
+                <p>Are</p>
+                <p>You</p>
+              </div>
+              <div>
+                <p>Looking</p>
+                <p>For</p>
+              </div>
+              <div>
+                <p>A</p>
+                <p class="reverse">
+                  <strong class="point_Color_shadow_01">U</strong>X / <strong class="point_Color_shadow_02">U</strong>I
+                  <span class="reverse-bg right"></span>
+                </p>
+              </div>
+              <div>
+                <p class="reverse">
+                  <strong class="point_Color_shadow_01">D</strong>esi<strong class="point_Color_shadow_02">g</strong>ner
+                  <span class="reverse-bg left"></span>
+                </p>
+                <p class="turn">?</p>
+              </div>
+            </div><!--.txt-box-->
+            <div class="name">
+              <h1>Kim HongDeok</h1>
+            </div><!--.name-->
+          </div><!--.inner-->
+        </div><!--.right-->
+      </section>
+
+      <section id="profile" class="parallax__item">
+
+        <div class="wrap-bg">
+          <div class="horaizontal-line"></div>
+          <div class="vertical-line"></div>
+          <h2>PROFILE</h2>
+        </div><!--.wrap-bg-->
+
+        <div class="left">
+          <div class="img-box">
+            <img src="img/picture.jpg" alt="사진">
+          </div><!--.img-box-->
+          <div class="txt-box">
+            <div class="name">
+              <h3>
+                <div>
+                  <span><span class="point_Color_shadow_01">K</span>im</span>
+                  <span class="korean">김홍덕</span>
+                </div>
+                <div><span class="point_Color_shadow_02">H</span>ong <span class="point_Color_shadow_02">D</span>eok
+                </div>
+              </h3>
+            </div><!--.name-->
+            <div class="flex-wrap">
+              <div class="birthday">1995.02.22</div>
+              <div class="e-mail">akasha6@naver.com</div>
+              <div class="phone">010-7450-2357</div>
+            </div><!--.flex-wrap-->
+          </div><!--.txt-box-->
+          <div class="key-box">
+            <h3><span class="point_Color_01">#</span>KEY WORDS</h3>
+            <ul>
+              <li class="parallax__item__desc reveal reveal_BTT"><span class="point_Color_02">#</span>책임감</li>
+              <li class="parallax__item__desc reveal reveal_BTT"><span class="point_Color_02">#</span>성실</li>
+              <li class="parallax__item__desc reveal reveal_BTT"><span class="point_Color_02">#</span>열정</li>
+              <li class="parallax__item__desc reveal reveal_BTT"><span class="point_Color_02">#</span>조화</li>
+              <li class="parallax__item__desc reveal reveal_BTT"><span class="point_Color_02">#</span>행동력</li>
+              <li class="parallax__item__desc reveal reveal_BTT"><span class="point_Color_02">#</span>계획</li>
+            </ul>
+          </div><!--.key-box-->
+        </div><!--.left-->
+
+        <div class="right">
+          <ul>
+            <li class="education">
+              <h3><span class="point_Color_01">E</span>ducation</h3>
+              <ul>
+                <li>
+                  <div class="year"><span class="point_Color_02">2</span>012</div>
+                  <div class="cont">성도고등학교 졸업</div>
+                </li>
+                <li>
+                  <div class="year"><span class="point_Color_02">2</span>018</div>
+                  <div class="cont">동원과학기술대학교 졸업</div>
+                </li>
+                <li>
+                  <div class="year">
+                    <span><span class="point_Color_02">2</span>023.12 -</span>
+                    <span class="until"><span class="point_Color_02">2</span>024.07</span>
+                  </div><!--.year-->
+                  <div class="cont">부산 IT 교육센터 교육수료</div>
+                </li>
+              </ul>
+            </li><!--.education-->
+
+            <li class="experience">
+              <h3><span class="point_Color_01">E</span>xperience</h3>
+              <ul>
+                <li>
+                  <div class="year"><span class="point_Color_02">2</span>018</div>
+                  <div class="cont">일본 워킹홀리데이 1년</div>
+                </li>
+              </ul>
+            </li><!--.experience-->
+
+            <li class="license">
+              <h3><span class="point_Color_01">L</span>icense</h3>
+              <ul>
+                <li>
+                  <div class="cont">웹디자인 기능사</div>
+                </li>
+                <li>
+                  <div class="cont">컴퓨터그래픽스 운용사</div>
+                </li>
+                <li>
+                  <div class="cont">1종 보통운전면허</div>
+                </li>
+              </ul>
+            </li><!--.license-->
+
+            <li class="skills">
+              <h3><span class="point_Color_01">S</span>kills</h3>
+              <ul>
+                <li>
+                  <div class="cont">HEML / CSS</div>
+                </li>
+                <li>
+                  <div class="cont">Figma</div>
+                </li>
+                <li>
+                  <div class="cont">Photoshop</div>
+                </li>
+                <li>
+                  <div class="cont">Illustrator</div>
+                </li>
+                <li>
+                  <div class="cont">Premiere</div>
+                </li>
+                <li>
+                  <div class="cont">After Effects</div>
+                </li>
+              </ul>
+            </li><!--.license-->
+          </ul>
+        </div><!--.right-->
+
+      </section>
+
+      <div id="horizontal" class="design">
+
+        <section id="design04" class="parallax__item konec">
+          <div class="wrap-bg">
+            <div class="horaizontal-line"></div>
+            <div class="vertical-line"></div>
+            <h2>DESIGN</h2>
+            <div class="con-bg"></div>
+          </div><!--.wrap-bg-->
+
+          <div class="left">
+            <div class="title-box parallax__item__desc reveal">
+              <h4><span class="point_Color_01">팀</span>프로젝트 02</h4>
+              <h3><img src="img/konec-logo.png" alt="코넥"><span class="hidden">코넥</span></h3>
+              <p>
+                <span>K</span>
+                <span>o</span>
+                <span>n</span>
+                <span>e</span>
+                <span>c</span>
+              </p>
+            </div><!--.title-box-->
+            <div class="con-box parallax__item__desc reveal">
+              <div class="contri">
+                <p>기여도</p>
+                <ul class="contri-box">
+                  <li>20%</li>
+                  <li>40%</li>
+                  <li>60%</li>
+                  <li>80%</li>
+                  <li>100%</li>
+                </ul><!--.contri-box-->
+              </div><!--.contri-->
+              <div class="contri-wrap">
+              </div><!--.contri-wrap-->
+
+              <div class="txt-box parallax__item__desc reveal">
+                <p>코넥 모니터링 앱을 홈페이지로 클라이언트 요구대로 디자인하여 홈페이지로 제작하였습니다.</p>
+              </div><!--.txt-box-->
+              <div class="btn-box">
+                <div class="btn parallax__item__desc reveal">
+                  <a href="https://khd6.github.io/konec/" class="wave-btn" target="blank">
+                    <span><strong>스</strong>타일 가이드</span>
+                    <div class="wave"></div>
+                  </a><!--.wave-btn-->
+                </div><!--.btn-->
+                <div class="btn parallax__item__desc reveal">
+                  <a href="https://www.figma.com/design/5GgfyygoRLLHEbtxzV4WP9/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B802_%EC%BD%94%EB%84%A5-%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C?node-id=0-1&t=qykNneNVT4HvMdzZ-1"
+                    class="wave-btn" target="blank">
+                    <span class="btn-txt before"><strong>P</strong>PT</span>
+                    <span class="btn-txt after"><strong>F</strong>igma</span>
+                    <div class="wave"></div>
+                  </a><!--.wave-btn-->
+                </div><!--.btn-->
+              </div><!--.btn-box-->
+            </div><!--.con-box-->
+          </div><!--.left-->
+
+          <div class="right parallax__item__desc reveal">
+            <div class="mockup-box">
+              <div class="card">
+                <div class="wrapper">
+                  <img src="img/konec.png" class="cover-image" alt="코넥">
+                </div><!--.wrapper-->
+                <div class="hover-wrap">
+                  <img src="img/monitor.png" alt="모니터">
+                  <a href="https://khd6.github.io/konec/doc/login.html" target="_blank">
+                    <div class="img-box"></div>
+                  </a>
+                </div><!--.hover-wrap-->
+              </div><!--.card-->
+            </div><!--.mockup-box-->
+          </div><!--.right-->
+
+        </section><!--#design04-->
+
+        <section id="design03" class="parallax__item andersen">
+          <div class="wrap-bg">
+            <div class="horaizontal-line"></div>
+            <h2>DESIGN</h2>
+            <div class="con-bg"></div>
+          </div><!--.wrap-bg-->
+
+          <div class="left">
+            <div class="title-box">
+              <h4><span class="point_Color_01">팀</span>프로젝트 01</h4>
+              <h3><img src="img/andersen-logo.png" alt="안데르센"><span class="hidden">안데르센</span></h3>
+              <p>
+                <span>A</span>
+                <span>n</span>
+                <span>d</span>
+                <span>e</span>
+                <span>r</span>
+                <span>s</span>
+                <span>e</span>
+                <span>n</span>
+                <span></span>
+                <span>E</span>
+                <span>x</span>
+                <span>h</span>
+                <span>i</span>
+                <span>b</span>
+                <span>i</span>
+                <span>t</span>
+                <span>i</span>
+                <span>o</span>
+                <span>n</span>
+              </p>
+            </div><!--.title-box-->
+            <div class="con-box">
+              <div class="contri">
+                <p>기여도</p>
+                <ul class="contri-box">
+                  <li>20%</li>
+                  <li>40%</li>
+                  <li>60%</li>
+                  <li>80%</li>
+                  <li>100%</li>
+                </ul><!--.contri-box-->
+              </div><!--.contri-->
+              <div class="txt-box">
+                <p class="del">안데르센과 동화들을 주제로 하여 학부모, 교사가 어린이와 함께 메타버스로 동화들을 체험할 수 있도록 홈페이지 제작과 ZEP 구현</p>
+                <p>4명으로 이루어진 프로젝트의 팀장으로서 기획, 팀원들의 역할분배와 조율, 홈페이지 제작과 ZEP을 구현하였습니다.</p>
+              </div><!--.txt-box-->
+              <div class="btn-box">
+                <div class="btn">
+                  <a href="https://zep.us/play/8M7LOX" class="wave-btn" target="blank">
+                    <span><strong>Z</strong>EP</span>
+                    <div class="wave"></div>
+                  </a><!--.wave-btn-->
+                </div><!--.btn-->
+                <div class="btn">
+                  <a href="output/andersen-ppt.pdf" class="wave-btn" target="blank">
+                    <span class="btn-txt before"><strong>P</strong>PT</span>
+                    <span class="btn-txt after"><strong>P</strong>DF</span>
+                    <div class="wave"></div>
+                  </a><!--.wave-btn-->
+                </div><!--.btn-->
+              </div><!--.btn-box-->
+            </div><!--.con-box-->
+          </div><!--.left-->
+
+          <div class="right">
+            <div class="mockup-box">
+              <div class="card">
+                <div class="wrapper">
+                  <img src="img/andersen.png" class="cover-image" alt="안데르센">
+                </div><!--.wrapper-->
+                <div class="hover-wrap">
+                  <img src="img/monitor.png" alt="모니터">
+                  <a href="https://khd6.github.io/Andersen-exhibition/" target="_blank">
+                    <div class="img-box"></div>
+                  </a>
+                </div><!--.hover-wrap-->
+              </div><!--.card-->
+            </div><!--.mockup-box-->
+          </div><!--.right-->
+        </section><!--#design03-->
+
+        <section id="design02" class="parallax__item recipe">
+          <div class="wrap-bg">
+            <div class="horaizontal-line"></div>
+            <h2>DESIGN</h2>
+            <div class="con-bg"></div>
+          </div><!--.wrap-bg-->
+
+          <div class="left">
+            <div class="title-box">
+              <h3><img src="img/10000recipe-logo.png" alt="만개의레시피"><span class="hidden">만개의 레시피</span></h3>
+              <p>
+                <span>1</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span></span>
+                <span>r</span>
+                <span>e</span>
+                <span>c</span>
+                <span>i</span>
+                <span>p</span>
+                <span>e</span>
+              </p>
+            </div><!--.title-box-->
+            <div class="con-box">
+              <div class="contri">
+                <p>기여도</p>
+                <ul class="contri-box">
+                  <li>20%</li>
+                  <li>40%</li>
+                  <li>60%</li>
+                  <li>80%</li>
+                  <li>100%</li>
+                </ul><!--.contri-box-->
+              </div><!--.contri-->
+              <div class="txt-box">
+                <p>'만개의 레시피' 홈페이지를 참고하여 디자인을 리뉴얼하여 반응형 웹 사이트로 제작하였습니다.</p>
+              </div><!--.txt-box-->
+              <div class="btn-box">
+              </div><!--.btn-box-->
+            </div><!--.con-box-->
+          </div><!--.left-->
+
+          <div class="right">
+            <div class="mockup-box">
+              <div class="card">
+                <div class="wrapper">
+                  <img src="img/10000recipe.png" class="cover-image" alt="만개의 레시피">
+                </div><!--.wrapper-->
+                <div class="hover-wrap">
+                  <img src="img/monitor.png" alt="모니터">
+                  <a href="https://khd6.github.io/project02/" target="_blank">
+                    <div class="img-box"></div>
+                  </a>
+                </div><!--.hover-wrap-->
+              </div><!--.card-->
+            </div><!--.mockup-box-->
+          </div><!--.right-->
+
+        </section><!--#design02-->
+
+        <section id="design01" class="parallax__item marienzoo">
+          <div class="wrap-bg">
+            <div class="horaizontal-line"></div>
+            <div class="vertical-line"></div>
+            <h2>DESIGN</h2>
+            <div class="con-bg"></div>
+          </div><!--.wrap-bg-->
+
+          <div class="left">
+            <div class="title-box">
+              <h3><img src="img/marienzoo-logo.png" alt="마리앤쥬"><span class="hidden">마리앤쥬</span></h3>
+              <p>
+                <span>M</span>
+                <span>a</span>
+                <span>r</span>
+                <span>i</span>
+                <span>e</span>
+                <span>n</span>
+                <span>z</span>
+                <span>o</span>
+                <span>o</span>
+              </p>
+            </div><!--.title-box-->
+            <div class="con-box">
+              <div class="contri">
+                <p>기여도</p>
+                <ul class="contri-box">
+                  <li>20%</li>
+                  <li>40%</li>
+                  <li>60%</li>
+                  <li>80%</li>
+                  <li>100%</li>
+                </ul><!--.contri-box-->
+              </div><!--.contri-->
+              <div class="contri-wrap">
+              </div><!--.contri-wrap-->
+
+              <div class="txt-box">
+                <p>실내동물원/이색동물교감카페 ‘마리앤쥬’를 로고, 컨셉페이지, 반응형 웹사이트 모두 디자인하고 제작하였습니다.</p>
+              </div><!--.txt-box-->
+              <div class="btn-box">
+                <div class="btn">
+                  <a href="img/concept_page.jpg" class="wave-btn" target="blank">
+                    <span><strong>컨</strong>셉 페이지</span>
+                    <div class="wave"></div>
+                  </a><!--.wave-btn-->
+                </div><!--.btn-->
+              </div><!--.btn-box-->
+            </div><!--.con-box-->
+          </div><!--.left-->
+
+          <div class="right">
+            <div class="mockup-box">
+              <div class="card">
+                <div class="wrapper">
+                  <img src="img/marienzoo.png" class="cover-image" alt="코넥">
+                </div><!--.wrapper-->
+                <div class="hover-wrap">
+                  <img src="img/monitor.png" alt="모니터">
+                  <a href="https://khd6.github.io/project01/" target="_blank">
+                    <div class="img-box"></div>
+                  </a>
+                </div><!--.hover-wrap-->
+              </div><!--.card-->
+            </div><!--.mockup-box-->
+          </div><!--.right-->
+
+        </section><!--#design01-->
+
+      </div><!--#horizontal-->
+
+      <section id="end" class="parallax__item">
+        <div class="wrap-bg">
+          <div class="horaizontal-line"></div>
+          <div class="vertical-line"></div>
+          <h2>END</h2>
+        </div><!--.wrap-bg-->
+
+        <div class="txt-wrap">
+          <div class="txt-box01">
+            <p class="parallax__item__desc reveal reveal_BTT">
+              <span class="reverse"><strong class="point_Color_shadow_03">T</strong>hank</span>
+              <span>You</span>
+            </p>
+            <p class="parallax__item__desc reveal reveal_BTT">
+              <span>For</span>
+              <span class="reverse"><strong class="point_Color_shadow_04">W</strong>atching</span>
+              <span class="swing">!</span>
+            </p>
+          </div><!--.txt-box01-->
+
+          <div class="txt-box02">
+            <ul>
+              <li class="parallax__item__desc reveal reveal_BTT">
+                <p><span class="point_Color_01">U</span>X/<span class="point_Color_02">U</span>I DESIGNER</p>
+                <p>김홍덕</p>
+              </li>
+              <li class="parallax__item__desc reveal reveal_BTT">
+                <p><span class="point_Color_01">P</span>hone</p>
+                <p>010-7450-2357</p>
+              </li>
+              <li class="parallax__item__desc reveal reveal_BTT">
+                <p><span class="point_Color_01">e</span>-mail</p>
+                <p>akasha6@naver.com</p>
+              </li>
+            </ul>
+          </div><!--.txt-box02-->
+        </div><!--.txt-wrap-->
+      </section><!--#end-->
+    </div><!--#parallax__cont-->
+    <div class="back-bg">
+      <div class="noite">
+        <div class="sunset"></div>
+      </div>
+      <div class="constelacao"></div><!--회전별-->
+      <div class="rotate-box">
+        <div class="lua"><!--달-->
+          <div class="textura"></div>
+        </div>
+      </div>
+      <div class="chuvaMeteoro"></div><!--별똥별-->
+      <div class="floresta">
+        <img src="img/bg-layer.png" alt="나무 그림자">
+      </div>
+    </div><!--.back-bg-->
+  </section><!--#wrap-->
+</body>
+
+</html>

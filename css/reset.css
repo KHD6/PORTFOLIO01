@@ -1,0 +1,27 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'RixInooAriDuriR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OKGUNG';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKGUNG.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{font-size: 25px; font-family: 'NanumSquare', sans-serif; color: #fff; min-width: 340px; font-weight: no;}
+a{text-decoration: none; color: inherit;}
+ul, ol{list-style: none;}
+img{vertical-align: top; border: 0; max-width: 100%;}
+.point_Color_shadow_01{color: #fe6c00; text-shadow: 1px 1px 1px #fff;}
+.point_Color_shadow_02{color: #2f44df; text-shadow: 1px 1px 1px #fff;}
+.point_Color_shadow_03{color: #fe6c00; text-shadow: 1px 1px 1px #000;}
+.point_Color_shadow_04{color: #2f44df; text-shadow: 1px 1px 1px #000;}
+.point_Color_01{color: #fe6c00;}
+.point_Color_02{color: #2f44df;}
+
+.hidden {font-size: 0; color: transparent;}

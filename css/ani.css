@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/*visual .reverse-bg 애니메이션 시작*/
+@keyframes rebgR {
+  0%{transform: translate(75%, -50%); opacity: 0;}
+  100%{transform: translate(-50%, -50%); opacity: 1;}
+}/*visual .reverse-bg 애니메이션 끝*/
+
+/*visual .reverse-bg 애니메이션 시작*/
+@keyframes rebgL {
+  0%{transform: translate(-175%, -50%); opacity: 0;}
+  100%{transform: translate(-50%, -50%); opacity: 1;}
+}/*visual .reverse-bg 애니메이션 끝*/
+
+/*visual .turn 애니메이션 시작*/
+@keyframes turn {
+  0%{transform: rotate(0);}
+  100%{transform: rotate(360deg);}
+}/*visual .turn 애니메이션 끝*/
+
+/*btn 애니메이션 시작*/
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}/*btn 애니메이션 끝*/
+
+/*hover-wrap img 시작*/
+@keyframes hover-img {
+  0% {
+    background-position: center 0%;
+  }
+  100% {
+    background-position: center 100%;
+  }
+}/*hover-wrap img 끝*/
+
+/*hover-wrap a on/off 시작*/
+@keyframes hover-a {
+  0% {
+    pointer-events: none;
+  }
+  99% {
+    pointer-events: none;
+  }
+  100% {
+    pointer-events: all;
+  }
+}/*hover-wrap a on/off 끝*/
+
+/*end .swing 애니메이션 시작*/
+@keyframes swing {
+  0%{transform: rotate(0);}
+  25%{transform: rotate(20deg);}
+  50%{transform: rotate(0);}
+  75%{transform: rotate(-20deg);}
+  100%{transform: rotate(0);}
+}/*end .swing 애니메이션 끝*/
