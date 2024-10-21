@@ -547,14 +547,18 @@
   background-color: #ddd;
 }
 
-.design .konec .right .mockup-box .hover-wrap a .img-box,
-.design .konec .right .mockup-box .hover-wrap a .img-box:hover {
-  animation: hover-img 7s ease-in-out infinite alternate;
-  background-image: url(../img/konec-pop.jpg);
+.design .vanilla_JS .right .mockup-box .hover-wrap a .img-box,
+.design .vanilla_JS .right .mockup-box .hover-wrap a .img-box:hover {
+  background-image: url(../img/todolist-pop.jpg);
 }
 
 .design .andersen .left .con-box ul.contri-box li:nth-child(5) {
   background-color: #ddd;
+}
+
+.design .andersen .right .mockup-box .hover-wrap a .img-box,
+.design .andersen .right .mockup-box .hover-wrap a .img-box:hover {
+  background-image: url(../img/andersen-pop.png);
 }
 
 .design .andersen .right .mockup-box .hover-wrap a .img-box,
