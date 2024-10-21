@@ -51,6 +51,11 @@
   background-size: cover;
 }
 
+.vanilla_JS .wrap-bg .con-bg {
+  background-image: url(../img/todolist-bg.jpg);
+  background-position: center;
+}
+
 .konec .wrap-bg .con-bg {
   background-image: url(../img/konec-bg.jpg);
   background-position: center;
