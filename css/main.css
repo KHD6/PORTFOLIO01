@@ -1132,7 +1132,7 @@
   #profile .right>ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
   }
 
   #profile .right>ul li {
@@ -1151,7 +1151,7 @@
 
   #profile .right .skills {
     width: 100%;
-    max-width: 1200px;
+    max-width: 720px;
   }
 
   #profile .right .skills ul {
