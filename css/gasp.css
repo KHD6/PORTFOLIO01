@@ -16,7 +16,7 @@
 #horizontal {
   display: flex;
   flex-wrap: nowrap;
-  width: 600%;/*100% x 가로화면수*/
+  width: 700%;/*100% x 가로화면수*/
 }
 #horizontal > section {
   width: 100%;

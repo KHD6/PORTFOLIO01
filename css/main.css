@@ -51,6 +51,11 @@
   background-size: cover;
 }
 
+.netflix_clone .wrap-bg .con-bg {
+  background-image: url(../img/netflix_clone-bg.jpg);
+  background-position: center;
+}
+
 .Movies_Rating .wrap-bg .con-bg {
   background-image: url(../img/MoviesRating-bg.jpg);
   background-position: center;
@@ -551,6 +556,12 @@
 
 .design .left .con-box .btn-box a:hover .btn-txt.after {
   top: 50%;
+}
+
+.design .netflix_clone .right .mockup-box .hover-wrap a .img-box,
+.design .netflix_clone .right .mockup-box .hover-wrap a .img-box:hover {
+  animation: hover-img 7s ease-in-out infinite alternate;
+  background-image: url(../img/netflix_clone-pop.png);
 }
 
 .design .Movies_Rating .right .mockup-box .hover-wrap a .img-box,
